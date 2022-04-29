@@ -1,0 +1,19 @@
+{
+    "name": "LEGO.WirelessSDK.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c1e2287f8245b461bb122787f7d21b93",
+        "GUID:873f8b414ab6a44fd93fe9b0d2ef3a34"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

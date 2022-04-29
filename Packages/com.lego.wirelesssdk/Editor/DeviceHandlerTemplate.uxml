@@ -1,0 +1,4 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:ue="UnityEditor.UIElements">
+    <ue:PropertyField binding-path="hubType" label="LEGO hub type" />
+    <VisualElement name="hubImage"/>
+</UXML>

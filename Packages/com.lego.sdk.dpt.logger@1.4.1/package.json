@@ -1,0 +1,10 @@
+{
+    "name": "com.lego.sdk.dpt.logger",
+    "version": "1.4.1",
+    "author": {
+       "name": "LEGO System A/S - LPAF"
+     },
+    "displayName": "LPAF - Logger",
+    "description": "A standard log framework with support for log-categories and built-in appenders for logging to file and log-window overlay within a Unity application.",
+    "unity": "2019.4"
+}

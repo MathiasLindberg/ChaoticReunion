@@ -1,0 +1,16 @@
+{
+    "name": "LEGO.Logger.Editor",
+    "references": [
+        "LEGO.Logger"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

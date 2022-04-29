@@ -1,0 +1,12 @@
+{
+    "name": "com.lego.sdk.dpt.cubb",
+    "version": "1.7.4",
+    "author": {
+       "name": "LEGO System A/S - LPAF"
+     },
+    "displayName": "LPAF - Core Unity BLE Bridge (CUBB)",
+    "description": "A unity-to-native bridge for the Bluetooth Low Energy APIs on iOS and Android",
+    "unity": "2019.4",
+    "dependencies": {
+    }
+}

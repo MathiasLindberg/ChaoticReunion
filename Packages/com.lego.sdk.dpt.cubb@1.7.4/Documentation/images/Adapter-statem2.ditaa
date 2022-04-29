@@ -1,0 +1,29 @@
+                      *
+                      |
+                  /---+---------------\
+                  |                   |
+                  |                   v
+                  |                /-------------------\
+                  |                | BLE not available |
+                  v                \-------------------/
+              /-----------------\     
+              |   BT disabled   |<---\
+              \---+-------------/    |
+     BT is enabled|                  |BT is disabled
+       by user    |                  |   by user
+                  v                  |
+              /------------------\   |
+/------------>|   Not scanning   +---+
+|             \---+--------------/   |
+|  Scan start req.|                  |
+|                 v                  |
+|             /-----------------\    |
+|             |TurningOnScanning+----+
+|             \---+-------------/    |
+| Scanning started|                  |
+|                 v                  |
+|             /-----------------\    |
+\-------------+    Scanning     +----/
+       :      \-----------------/
+       :
+Scan stop req./scanning failed

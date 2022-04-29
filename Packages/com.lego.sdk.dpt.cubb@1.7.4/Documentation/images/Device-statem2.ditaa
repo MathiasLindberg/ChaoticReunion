@@ -1,0 +1,6 @@
+     |Discovered
+     v
++-----------+  Timeout  +-----------+  Timeout  +--------+
+|  Visible  +---------->| Invisible +---------->| (Gone) |
+|           |<----------+           |    or     |        |
++-----------+ Discovered+-----------+BT disabled+--------+

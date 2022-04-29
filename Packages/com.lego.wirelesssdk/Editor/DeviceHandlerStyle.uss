@@ -1,0 +1,6 @@
+#hubImage
+{
+    height: 150px;
+    margin-top: 10px;
+    -unity-background-scale-mode: scale-to-fit;
+}

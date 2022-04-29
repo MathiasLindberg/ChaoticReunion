@@ -1,0 +1,9 @@
+* Unity 2021.3.1 is required.
+* Don’t use Apple Silicon editor version.
+* Build for Intel 64-bit only (no Apple Silicon or Universal builds).
+
+* The hub uses 6 batteries (not 3).
+* If motor position commands don't behave as expected, try breaking/drifting the motor and add a short delay between commands.
+
+* Bluetooth must be enabled.
+* If bluetooth connection becomes sluggish, try rebooting the computer.

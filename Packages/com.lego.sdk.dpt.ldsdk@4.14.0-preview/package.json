@@ -1,0 +1,12 @@
+{
+    "displayName": "LPAF - LDSDK (LEGO Device SDK)", 
+    "description": "LEGO Device SDK, based on Core Unity BLE Bridge", 
+    "author": {
+        "name": "LEGO System A/S - LPAF"
+    }, 
+    "unity": "2019.4", 
+    "version": "4.14.0-preview", 
+    "dependencies": {
+    }, 
+    "name": "com.lego.sdk.dpt.ldsdk"
+}
