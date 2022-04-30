@@ -14,6 +14,7 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-2:
       value: 57520c5353545958550b5b2746760e44144f1b2f782975352e2a4a6be7e46468
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedSceneGuid-3:
       value: 01040350075150085c08542642275d4410154c2e2d797e327e781c61bab33560
       flags: 0
@@ -23,6 +24,8 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-5:
       value: 05040c565d070d0f095f092347735b4440164d797b2e706678284b37b0e6373e
       flags: 0
+=======
+>>>>>>> BrickAttachment
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
