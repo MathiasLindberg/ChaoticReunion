@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1905654158">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2860779826" Name="Play_Music___Fluffys_Carrot_Farm" ObjectPath="\Events\Default Work Unit\Play_Music___Fluffys_Carrot_Farm" DurationType="OneShot" DurationMin="30.857166" DurationMax="30.857166">
+					<IncludedMemoryFiles>
+						<File Id="231062063" Language="SFX">
+							<ShortName>Music - Fluffys Carrot Farm.wav</ShortName>
+							<Path>SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

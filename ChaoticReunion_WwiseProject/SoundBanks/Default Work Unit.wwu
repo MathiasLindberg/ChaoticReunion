@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3B509952-31A5-4297-B7F4-1F336B3649D4}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3B509952-31A5-4297-B7F4-1F336B3649D4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{157168BE-1F5A-4E07-9183-853E22368F62}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Music___Fluffys_Carrot_Farm" ID="{AF7E90BD-E0E5-4866-A322-DD193DF2A010}" WorkUnitID="{F66C6332-C622-4BED-B068-6669E8A9E689}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

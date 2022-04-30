@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F66C6332-C622-4BED-B068-6669E8A9E689}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F66C6332-C622-4BED-B068-6669E8A9E689}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music___Fluffys_Carrot_Farm" ID="{AF7E90BD-E0E5-4866-A322-DD193DF2A010}">
+					<ChildrenList>
+						<Action Name="" ID="{F608E882-8729-4D27-92C0-D2A5924239E6}" ShortID="792811206">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music - Fluffys Carrot Farm" ID="{DDE08C03-6516-4BB9-86AF-431421EF5C3C}" WorkUnitID="{9F048E01-E739-4AB4-A310-C41C38E5A529}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

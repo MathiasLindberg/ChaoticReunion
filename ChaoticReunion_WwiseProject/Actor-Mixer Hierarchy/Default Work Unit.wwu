@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9F048E01-E739-4AB4-A310-C41C38E5A529}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9F048E01-E739-4AB4-A310-C41C38E5A529}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Music - Fluffys Carrot Farm" ID="{DDE08C03-6516-4BB9-86AF-431421EF5C3C}" ShortID="786044653">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="New Conversion Settings" ID="{5EF5FD21-D3DB-423D-B72E-599404D382A4}" WorkUnitID="{7F47A03D-6CC3-4B8F-AB47-913D943D6EE4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C8954E1C-084F-41C0-A628-C27DB4AE5393}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music - Fluffys Carrot Farm" ID="{249E6079-4B64-4111-AD4F-B0DF3EBA10DF}">
+							<Language>SFX</Language>
+							<AudioFile>Music - Fluffys Carrot Farm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="231062063"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music - Fluffys Carrot Farm" ID="{249E6079-4B64-4111-AD4F-B0DF3EBA10DF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

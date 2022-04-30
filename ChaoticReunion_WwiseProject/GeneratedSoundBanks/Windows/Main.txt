@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2860779826	Play_Music___Fluffys_Carrot_Farm			\Default Work Unit\Play_Music___Fluffys_Carrot_Farm	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	231062063	Music - Fluffys Carrot Farm	D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\.cache\Windows\SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music - Fluffys Carrot Farm		526376
+
