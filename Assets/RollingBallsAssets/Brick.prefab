@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693f8b5f9b885f3478e79e2e52266dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakForce: 200
-  breakTorque: 100
+  breakForce: 500
+  breakTorque: 200
   width: 2
   height: 2
 --- !u!54 &5272235195270664279

@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
 
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
 
-        if (ignoreInsufficientAmountOfControllers)
+        if (!ignoreInsufficientAmountOfControllers)
         {
             while (AmountOfPlayersShook() < 1)
             {

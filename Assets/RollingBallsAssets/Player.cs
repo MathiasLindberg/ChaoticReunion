@@ -42,21 +42,7 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        /*        if (Input.GetKeyDown(forwardKey)) forwardKeyDown = true;
-                else if (Input.GetKeyUp(forwardKey)) forwardKeyDown = false;
-                if (Input.GetKeyDown(backKey)) backKeyDown = true;
-                else if (Input.GetKeyUp(backKey)) backKeyDown = false;
-                if (Input.GetKeyDown(leftKey)) leftKeyDown = true;
-                else if (Input.GetKeyUp(leftKey)) leftKeyDown = false;
-                if (Input.GetKeyDown(rightKey)) rightKeyDown = true;
-                else if (Input.GetKeyUp(rightKey)) rightKeyDown = false;
-
-                if (forwardKeyDown || backKeyDown || leftKeyDown || rightKeyDown)
-                {
-                    ApplyMotion();
-                }*/
-        
+    {        
         if (!CanMove) return;
         
         if (Input.GetKeyDown(forwardKey)) forwardKeyDown = true;
@@ -105,11 +91,6 @@ public class Player : MonoBehaviour
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)
         {
             HasShaken = true;
-            //var shakeForce = previousAcceleration * Time.fixedDeltaTime * 10000f;
-            //rb.AddForce(shakeForce * sensorMovementForce);
-            //rb.AddTorque(Vector3.Cross(shakeForce * sensorRollForce, Vector3.down));
-
-            //previousAcceleration = currentAcceleration;
         }
         else
         {
@@ -117,6 +98,11 @@ public class Player : MonoBehaviour
             {
                 currentAcceleration.y = 0;
                 Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
+                Brick brick = GetComponent<Brick>();
+                foreach (Brick child in brick.ChildBricks)
+                {
+                    child.GetComponent<Rigidbody>().AddForce(force * sensorMovementForce);
+                }
                 rb.AddForce(force * sensorMovementForce);
                 rb.AddTorque(Vector3.Cross(force * sensorRollForce, Vector3.down));
 

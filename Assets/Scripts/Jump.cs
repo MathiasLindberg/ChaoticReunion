@@ -5,12 +5,12 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     [SerializeField] private ForceSensor forceSensor;
-    [SerializeField] private float throwForce = 2.0f;
+    [SerializeField] private float jumpForce = 200.0f;
 
     public void AddJumpingForce()
     {
         if (!forceSensor.Touch) return;
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.AddForce(new Vector3(0, 200, 0));
+        rb.AddForce(new Vector3(0, 1, 0) * jumpForce);
     }
 }

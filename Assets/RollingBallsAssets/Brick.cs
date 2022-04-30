@@ -13,7 +13,7 @@ public class Brick : MonoBehaviour
     [SerializeField] int height = 2;
     private bool attached;
     private Brick parentBrick;
-    private List<Brick> childBricks;
+    public List<Brick> ChildBricks { get; private set; }
     private List<AttachmentPoint> upperAttachments;
     private List<AttachmentPoint> lowerAttachments;
     private List<AttachmentPoint> parentAttachments;
@@ -26,7 +26,7 @@ public class Brick : MonoBehaviour
     {
         int RandomColour = Random.Range(1,7);
 
-        childBricks = new List<Brick>();
+        ChildBricks = new List<Brick>();
 
         Material mat = GetComponent<MeshRenderer>().material;
       //  mat.color = new Color(Random.value, Random.value, Random.value);
@@ -107,7 +107,7 @@ public class Brick : MonoBehaviour
         Brick next = null;
         float smallestDiff = float.MaxValue;
 
-        foreach (Brick child in childBricks)
+        foreach (Brick child in ChildBricks)
         {
             float diff = Vector3.Angle(child.transform.position - transform.position, direction);
             if (diff < smallestDiff)
@@ -129,7 +129,7 @@ public class Brick : MonoBehaviour
             CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
         }
 
-        if (attached && !IsChainedToPlayer && collision.collider.GetComponent<Brick>().IsChainedToPlayer)
+        if (attached && !IsChainedToPlayer && collision.collider.TryGetComponent(out Brick brick) && brick.IsChainedToPlayer)
         {
             Detach();
         }
@@ -164,7 +164,7 @@ public class Brick : MonoBehaviour
     private void Detach()
     {
         attached = false;
-        parentBrick.childBricks.Remove(this);
+        parentBrick.ChildBricks.Remove(this);
         foreach (AttachmentPoint attachment in parentAttachments)
         {
             attachment.IsOccupied = false;
@@ -193,6 +193,8 @@ public class Brick : MonoBehaviour
             AttachmentPoint otherAttachment = to.FindClosestAttachmentPoint(to.transform.InverseTransformPoint(at), !ownAttachment.IsSocket);
             if (otherAttachment == null) return;
 
+            to.transform.position += Vector3.up;
+
             transform.position = to.transform.position;
             transform.rotation = to.transform.rotation;
             Vector3 ownOffset = Vector3.Scale(ownAttachment.Position, transform.localScale);
@@ -218,7 +220,7 @@ public class Brick : MonoBehaviour
             joint.connectedAnchor = otherAttachment.Position;
             joint.connectedBody = to.GetComponent<Rigidbody>();
 
-            to.childBricks.Add(this);
+            to.ChildBricks.Add(this);
             if (to.IsChainedToPlayer)
             {
                 IsChainedToPlayer = true;
@@ -227,7 +229,7 @@ public class Brick : MonoBehaviour
             parentBrick = to;
             if (ownAttachment.IsSocket)
             {
-
+                float threshold = new Vector3(collider.bounds.size.x / width, collider.bounds.size.y / 4, collider.bounds.size.z / height).magnitude;
                 foreach (AttachmentPoint thisAttachment in lowerAttachments)
                 {
                     if (!thisAttachment.IsOccupied)
@@ -235,7 +237,7 @@ public class Brick : MonoBehaviour
                         Vector3 pos = to.transform.TransformPoint(thisAttachment.Position);
                         AttachmentPoint other = to.FindClosestAttachmentPoint(pos, !thisAttachment.IsSocket);
 
-                        if (other != null)
+                        if (other != null && (to.transform.TransformPoint(other.Position) - transform.TransformPoint(thisAttachment.Position)).magnitude < threshold)
                         {
                             thisAttachment.Connection = other;
                             other.Connection = thisAttachment;
