@@ -113,6 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breakForce: 150
   breakTorque: 40
+  width: 2
+  height: 2
 --- !u!54 &5272235195270664279
 Rigidbody:
   m_ObjectHideFlags: 0
