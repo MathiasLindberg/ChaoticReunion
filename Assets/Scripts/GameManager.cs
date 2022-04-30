@@ -1,6 +1,7 @@
-using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public enum GameStates
 {
@@ -14,6 +15,10 @@ public enum GameStates
 public class GameManager : MonoBehaviour
 {
     public GameStates GameState { get; set; }
+
+    [Header("Gameplay Elements")] 
+    [SerializeField] private List<Player> players = new();
+    [SerializeField] private Spawner spawner;
     
     public static GameManager Instance
     {
@@ -53,28 +58,56 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameInitialising()
     {
         GameState = GameStates.Initialising;
-        Debug.Log("Current Game State: " + GameState);
+
+        spawner.Spawn();
+        
         yield return new WaitForSeconds(2.5f);
     }
 
     private IEnumerator GameStarting()
     {
         GameState = GameStates.Starting;
-        Debug.Log("Current Game State: " + GameState);
-        yield return new WaitForSeconds(2.5f);
+
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+        
+        foreach (var player in players)
+        {
+            player.CanMove = true;
+        }
+        
+        yield return null;
     }
 
     private IEnumerator GameRunning()
     {
         GameState = GameStates.Running;
-        Debug.Log("Current Game State: " + GameState);
-        yield return new WaitForSeconds(2.5f);
+        
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+
+        while (AmountOfPlayersAlive() > 1)
+        {
+            yield return null;
+        }
+
+        yield return null;
     }
 
     private IEnumerator GameFinishing()
     {
         GameState = GameStates.Finishing;
-        Debug.Log("Current Game State: " + GameState);
+
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+
         yield return null;
+    }
+
+    private int AmountOfPlayersAlive()
+    {
+        var playersAlive = players.Count;
+
+        foreach (var _ in players.Where(player => !player.IsAlive))
+            playersAlive--;
+
+        return playersAlive;
     }
 }
