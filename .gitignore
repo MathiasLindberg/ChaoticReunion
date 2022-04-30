@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -65,3 +66,4 @@ Assets/- Quick Tips -/.DS_Store
 
 cpplog.txt
 InitializedMarker
+cppdata.txt
