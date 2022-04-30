@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8093698031498455930}
   - component: {fileID: 8093698031498455928}
   - component: {fileID: 8093698031498455910}
+  - component: {fileID: -80673488593737268}
   m_Layer: 0
   m_Name: Player
   m_TagString: Brick
@@ -132,3 +133,22 @@ MonoBehaviour:
   rightKey: 0
   rollForce: 3
   movementForce: 0.2
+  sensorRollForce: 2
+  sensorMovementForce: 2
+  accelerationSensor: {fileID: 0}
+--- !u!114 &-80673488593737268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093698031498455934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693f8b5f9b885f3478e79e2e52266dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakForce: 10
+  breakTorque: 10
+  width: 2
+  height: 2

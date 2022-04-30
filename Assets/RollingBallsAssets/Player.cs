@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] private KeyCode rightKey = KeyCode.D;
     [SerializeField] private float rollForce = 10.0f;
     [SerializeField] private float movementForce = 10.0f;
+    [SerializeField] private float sensorRollForce = 2.0f;
+    [SerializeField] private float sensorMovementForce = 2.0f;
     [SerializeField] private AccelerationSensor accelerationSensor;
     private Rigidbody rb;
     private bool forwardKeyDown;
@@ -101,8 +103,8 @@ public class Player : MonoBehaviour
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)
         {
             var shakeForce = previousAcceleration * Time.fixedDeltaTime * 10000f;
-            rb.AddForce(shakeForce * movementForce);
-            rb.AddTorque(Vector3.Cross(shakeForce * rollForce, Vector3.down));
+            rb.AddForce(shakeForce * sensorMovementForce);
+            rb.AddTorque(Vector3.Cross(shakeForce * sensorRollForce, Vector3.down));
             
             previousAcceleration = currentAcceleration;
         }
@@ -110,8 +112,8 @@ public class Player : MonoBehaviour
         {
             currentAcceleration.y = 0;
             Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
-            rb.AddForce(force * movementForce);
-            rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
+            rb.AddForce(force * sensorMovementForce);
+            rb.AddTorque(Vector3.Cross(force * sensorRollForce, Vector3.down));
 
             previousAcceleration = currentAcceleration;
         }
