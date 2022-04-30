@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1d0466b412a7534d9f1365e532f49d7e
     GuidInternal: 
-    m_lastTime: -8585502861694127024
+    m_lastTime: -8585502814526951835
     List:
     - name: Main
       guid: 34b103835a9bdf4793c2564e497ec2f5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 959103d83ace0a448b5f308561410089
     GuidInternal: 
-    m_lastTime: -8585502861693987290
+    m_lastTime: -8585502814526462895
     List:
     - name: Play_AnnoyingGameMusic
       guid: 65bff04b9650644eb995fed37484e54f
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_LegoConnect
+      guid: 27e8f76ec0184e409095b27724375d80
+      id: 437071513
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Play_LegoConnect
+        ObjectType: 3
+        guid: 27e8f76ec0184e409095b27724375d80
+      Path: Events\Default Work Unit\Play_LegoConnect
+      maxAttenuation: 0
+      maxDuration: 0.288229
+      minDuration: 0.020387
     - name: Play_LegoNoises
       guid: f7a27c43e1013a498c43668cab2217fa
       id: 2910028272
@@ -193,7 +210,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 68b0179ede83c9458bedde6676d71947
     GuidInternal: 
-    m_lastTime: -8585503455455460309
+    m_lastTime: -8585502811699776161
     List:
     - name: EngineSpeed
       guid: 2f45c714def84a429c69dbc50c3583eb
@@ -209,6 +226,34 @@ MonoBehaviour:
         ObjectType: 13
         guid: 2f45c714def84a429c69dbc50c3583eb
       Path: Game Parameters\Default Work Unit\EngineSpeed
+    - name: RTPC_BrickNumber
+      guid: ebf0e4a06ab8b749856b9855d0e7cdb5
+      id: 3743445693
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 68b0179ede83c9458bedde6676d71947
+      - ElementName: RTPC_BrickNumber
+        ObjectType: 13
+        guid: ebf0e4a06ab8b749856b9855d0e7cdb5
+      Path: Game Parameters\Default Work Unit\RTPC_BrickNumber
+    - name: RTPC_BrickSpeed
+      guid: 4c0212e6a4811f40b3c8d22495211c92
+      id: 3984738255
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 68b0179ede83c9458bedde6676d71947
+      - ElementName: RTPC_BrickSpeed
+        ObjectType: 13
+        guid: 4c0212e6a4811f40b3c8d22495211c92
+      Path: Game Parameters\Default Work Unit\RTPC_BrickSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -252,7 +297,7 @@ MonoBehaviour:
     m_lastTime: -8585503470441903908
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0b0000000c000000
+  ExpandedWaapiItemIds: 05000000060000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
