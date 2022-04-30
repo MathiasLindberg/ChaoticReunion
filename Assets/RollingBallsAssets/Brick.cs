@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class Brick : MonoBehaviour
 {
+    public bool IsPlayer { get; private set; }
+    public bool IsChainedToPlayer { get; private set; }
     [SerializeField] float breakForce = 10f;
     [SerializeField] float breakTorque = 10f;
     [SerializeField] int width = 2;
     [SerializeField] int height = 2;
     private bool attached;
-    private bool isPlayer;
-    private GameObject attachedTo;
+    private Brick parentBrick;
+    private List<Brick> childBricks;
     private List<AttachmentPoint> upperAttachments;
     private List<AttachmentPoint> lowerAttachments;
+    private AttachmentPoint parentAttachment;
     private Collider collider;
     private bool setup;
     private float epsilon = 0f;
@@ -21,6 +23,8 @@ public class Brick : MonoBehaviour
     void Start()
     {
         int RandomColour = Random.Range(1,7);
+
+        childBricks = new List<Brick>();
 
         Material mat = GetComponent<MeshRenderer>().material;
       //  mat.color = new Color(Random.value, Random.value, Random.value);
@@ -36,7 +40,8 @@ public class Brick : MonoBehaviour
         collider = GetComponent<Collider>();
 
         Player player;
-        isPlayer = TryGetComponent(out player);
+        IsPlayer = TryGetComponent(out player);
+        IsChainedToPlayer = IsPlayer;
 
         upperAttachments = new List<AttachmentPoint>(width * height);
         lowerAttachments = new List<AttachmentPoint>(width * height);
@@ -58,20 +63,52 @@ public class Brick : MonoBehaviour
 
     }
 
+    public bool TryGetPlayerFromChain(out Player player)
+    {
+        player = null;
+        for (Brick brick = this; brick.parentBrick != null; brick = brick.parentBrick)
+        {
+            if (brick.IsPlayer)
+            {
+                player = brick.GetComponent<Player>();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Brick GetOutermostBrick(Vector3 direction)
+    {
+        Brick next = null;
+        float smallestDiff = float.MaxValue;
+
+        foreach (Brick child in childBricks)
+        {
+            float diff = Vector3.Angle(child.transform.position - transform.position, direction);
+            if (diff < smallestDiff)
+            {
+                smallestDiff = diff;
+                next = child;
+            }
+        }
+        if (next == null) return this;
+        return next.GetOutermostBrick(direction);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (!setup || isPlayer) return;
+        if (!setup || IsPlayer) return;
 
-        if (attached)
+        if (attached && !IsChainedToPlayer)
         {
             Player player;
-            bool attachedToPlayer = attachedTo != null && attachedTo.TryGetComponent(out player);
+            bool attachedToPlayer = parentBrick != null && parentBrick.TryGetComponent(out player);
             if (!attachedToPlayer)
             {
                 Detach();
             }
         }
-        if (!attached && collision.collider.CompareTag("Brick"))
+        if (!attached && collision.collider.CompareTag("Brick") && !IsChainedToPlayer)
         {
             Vector3 connectionPoint = new Vector3();
 
@@ -81,17 +118,17 @@ public class Brick : MonoBehaviour
             }
             connectionPoint /= collision.contactCount;
 
-            Attach(collision.collider.gameObject, connectionPoint);
+            Attach(collision.collider.GetComponent<Brick>(), connectionPoint);
         }
     }
     private void OnCollisionExit(Collision collision)
     {
-        if (!setup || isPlayer) return;
+        if (!setup || IsPlayer) return;
 
         if (attached && collision.collider.CompareTag("Brick"))
         {
             Brick other = collision.collider.GetComponent<Brick>();
-            if (other == attachedTo || other.attachedTo == this)
+            if (other == parentBrick || other.parentBrick == this)
             {
                 Detach();
             }
@@ -101,39 +138,29 @@ public class Brick : MonoBehaviour
     private void Detach()
     {
         attached = false;
-        attachedTo = null;
+        parentBrick.childBricks.Remove(this);
+        parentAttachment.IsOccupied = false;
+        parentAttachment.Connection.IsOccupied = false;
+        parentAttachment.Connection = null;
+        IsChainedToPlayer = false;
+        parentBrick = null;
         transform.parent = null;
+
     }
 
-    //private Vector3 debugPos1;
-    //private Vector3 debugPos2;
-    //private bool drawDebug;
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.black;
-    //    if (drawDebug)
-    //    {
-    //        Gizmos.DrawSphere(debugPos1, 0.025f);
-    //        Gizmos.DrawSphere(debugPos2, 0.025f);
-    //    }
-
-    //    Gizmos.color = Color.yellow;
-    //    foreach (AttachmentPoint point in upperAttachments) Gizmos.DrawSphere(transform.TransformPoint(point.Position), 0.01f);
-    //    Gizmos.color = Color.green;
-    //    foreach (AttachmentPoint point in lowerAttachments) Gizmos.DrawSphere(transform.TransformPoint(point.Position), 0.01f);
-    //}
-
-    private void Attach(GameObject to, Vector3 at)
+    private void Attach(Brick to, Vector3 at)
     {
-        Brick other;
-        if (to.TryGetComponent(out other) && other.attachedTo != gameObject)
+        if (to.parentBrick != gameObject)
         {
+
             AttachmentPoint ownAttachment = FindClosestAttachmentPoint(transform.InverseTransformPoint(at));
-            AttachmentPoint otherAttachment = other.FindClosestAttachmentPoint(other.transform.InverseTransformPoint(at), !ownAttachment.IsSocket);
+            if (ownAttachment == null) return;
+
+            AttachmentPoint otherAttachment = to.FindClosestAttachmentPoint(to.transform.InverseTransformPoint(at), !ownAttachment.IsSocket);
+            if (otherAttachment == null) return;
 
             attached = true;
-            other.attached = true;
-            attachedTo = to;
+            parentBrick = to;
             transform.position = to.transform.position;
             transform.rotation = to.transform.rotation;
             Vector3 ownOffset = Vector3.Scale(ownAttachment.Position, transform.localScale);
@@ -145,11 +172,6 @@ public class Brick : MonoBehaviour
 
 
 
-            //debugPos1 = transform.TransformPoint(ownAttachment.Position);
-            //debugPos2 = other.transform.TransformPoint(otherAttachment.Position);
-            //drawDebug = true;
-
-            //transform.parent = to.transform;
             FixedJoint joint;
             if (!gameObject.TryGetComponent(out joint))
             {
@@ -159,6 +181,16 @@ public class Brick : MonoBehaviour
             joint.breakTorque = breakTorque;
             joint.connectedAnchor = otherAttachment.Position;
             joint.connectedBody = to.GetComponent<Rigidbody>();
+
+            to.childBricks.Add(this);
+            if (to.IsChainedToPlayer)
+            {
+                IsChainedToPlayer = true;
+            }
+            parentAttachment = otherAttachment;
+            parentAttachment.Connection = ownAttachment;
+            ownAttachment.IsOccupied = true;
+            otherAttachment.IsOccupied = true;
         }
 
     }
@@ -174,7 +206,7 @@ public class Brick : MonoBehaviour
                 int index = i * width + j;
                 AttachmentPoint point = socket ? lowerAttachments[index] : upperAttachments[index];
                 float dist = (point.Position - localPosition).magnitude;
-                if (dist < closestDist)
+                if (!point.IsOccupied && dist < closestDist)
                 {
                     closest = point;
                     closestDist = dist;
@@ -196,7 +228,7 @@ public class Brick : MonoBehaviour
                 int index = i * width + j;
                 AttachmentPoint point = lowerAttachments[index];
                 float dist = (point.Position - localPosition).magnitude;
-                if (dist < closestDist)
+                if (!point.IsOccupied && dist < closestDist)
                 {
                     closest = point;
                     closestDist = dist;
@@ -221,6 +253,7 @@ public class Brick : MonoBehaviour
         public Vector3 Position { get; private set; }
         public bool IsOccupied { get; set; } = false;
         public bool IsSocket { get; private set; } = false;
+        public AttachmentPoint Connection { get; set; }
 
         public AttachmentPoint(int x, int y, int width, int height, bool socket, Vector3 size)
         {
