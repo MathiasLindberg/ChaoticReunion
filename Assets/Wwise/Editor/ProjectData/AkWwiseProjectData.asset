@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1d0466b412a7534d9f1365e532f49d7e
     GuidInternal: 
-    m_lastTime: -8585502922484357124
+    m_lastTime: -8585502861694127024
     List:
     - name: Main
       guid: 34b103835a9bdf4793c2564e497ec2f5
@@ -94,8 +94,93 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 959103d83ace0a448b5f308561410089
     GuidInternal: 
-    m_lastTime: -8585503470444222144
-    List: []
+    m_lastTime: -8585502861693987290
+    List:
+    - name: Play_AnnoyingGameMusic
+      guid: 65bff04b9650644eb995fed37484e54f
+      id: 2721505640
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Play_AnnoyingGameMusic
+        ObjectType: 3
+        guid: 65bff04b9650644eb995fed37484e54f
+      Path: Events\Default Work Unit\Play_AnnoyingGameMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FactoryAmbience
+      guid: 82b96fff66af954f9992be4d477fae68
+      id: 4037641288
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Play_FactoryAmbience
+        ObjectType: 3
+        guid: 82b96fff66af954f9992be4d477fae68
+      Path: Events\Default Work Unit\Play_FactoryAmbience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_LegoNoises
+      guid: f7a27c43e1013a498c43668cab2217fa
+      id: 2910028272
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Play_LegoNoises
+        ObjectType: 3
+        guid: f7a27c43e1013a498c43668cab2217fa
+      Path: Events\Default Work Unit\Play_LegoNoises
+      maxAttenuation: 0
+      maxDuration: 0.450103
+      minDuration: 0.213791
+    - name: Stop_AnnoyingGameMusic
+      guid: 729b6710841b334b965790f3d5af9358
+      id: 2573728290
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Stop_AnnoyingGameMusic
+        ObjectType: 3
+        guid: 729b6710841b334b965790f3d5af9358
+      Path: Events\Default Work Unit\Stop_AnnoyingGameMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_FactoryAmbience
+      guid: 242a270248d476498c9b7d7c753e71b9
+      id: 322622062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 959103d83ace0a448b5f308561410089
+      - ElementName: Stop_FactoryAmbience
+        ObjectType: 3
+        guid: 242a270248d476498c9b7d7c753e71b9
+      Path: Events\Default Work Unit\Stop_FactoryAmbience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -167,7 +252,7 @@ MonoBehaviour:
     m_lastTime: -8585503470441903908
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 0b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
