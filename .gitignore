@@ -67,3 +67,5 @@ Assets/- Quick Tips -/.DS_Store
 cpplog.txt
 InitializedMarker
 cppdata.txt
+
+*.prof
