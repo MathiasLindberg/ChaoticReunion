@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     [Header("Gameplay Elements")] 
     [SerializeField] private List<Player> players = new();
     [SerializeField] private Spawner spawner;
+
+    [Header("Debug Settings")] 
+    [SerializeField] private bool ignoreInsufficientAmountOfControllers;
     
     public static GameManager Instance
     {
@@ -59,6 +62,16 @@ public class GameManager : MonoBehaviour
     {
         GameState = GameStates.Initialising;
 
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+
+        if (!ignoreInsufficientAmountOfControllers)
+        {
+            while (AmountOfControllersConnected() != players.Count)
+            {
+                yield return null;
+            }
+        }
+        
         spawner.Spawn();
         
         yield return new WaitForSeconds(2.5f);
@@ -101,6 +114,11 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
+    private int AmountOfControllersConnected()
+    {
+        return players.Count(player => player.isSensorConnected);
+    }
+    
     private int AmountOfPlayersAlive()
     {
         var playersAlive = players.Count;

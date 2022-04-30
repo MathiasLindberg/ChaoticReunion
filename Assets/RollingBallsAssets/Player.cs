@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     
     // Acceleration Sensor variables
     private Vector3 previousAcceleration;
-    private bool isSensorConnected;
+    public bool isSensorConnected { get; set; }
     
     public bool IsAlive { get; set; } = true;
     public bool CanMove { get; set; }

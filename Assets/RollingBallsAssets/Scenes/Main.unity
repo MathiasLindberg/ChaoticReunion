@@ -844,11 +844,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIViews
       objectReference: {fileID: 0}
-    - target: {fileID: 7799314808269054168, guid: 4f42199768903c240ad059d6e956807f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f42199768903c240ad059d6e956807f, type: 3}
 --- !u!1 &1091837465
@@ -903,11 +898,6 @@ PrefabInstance:
       objectReference: {fileID: 522211316}
     - target: {fileID: 6110792469976888838, guid: 1eb591030ec202340bd53b5825a36860,
         type: 3}
-      propertyPath: players.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6110792469976888838, guid: 1eb591030ec202340bd53b5825a36860,
-        type: 3}
       propertyPath: players.Array.data[0]
       value: 
       objectReference: {fileID: 1850167282}
@@ -916,6 +906,11 @@ PrefabInstance:
       propertyPath: players.Array.data[1]
       value: 
       objectReference: {fileID: 1781507524}
+    - target: {fileID: 6110792469976888838, guid: 1eb591030ec202340bd53b5825a36860,
+        type: 3}
+      propertyPath: ignoreInsufficientAmountOfControllers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6110792469976888839, guid: 1eb591030ec202340bd53b5825a36860,
         type: 3}
       propertyPath: m_RootOrder
