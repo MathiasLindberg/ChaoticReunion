@@ -25,7 +25,10 @@ public class Player : MonoBehaviour
     
     public bool IsAlive { get; set; } = true;
     public bool CanMove { get; set; }
-    
+
+    private float shakeThreshold = 1.25f;
+    private Vector3 oldAcceleration;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -88,19 +91,32 @@ public class Player : MonoBehaviour
     {
         isSensorConnected = true;
         previousAcceleration = accelerationSensor.Acceleration;
+        oldAcceleration = accelerationSensor.Acceleration;
     }
 
     public void ApplyAccelerationFromSensor()
     {
         Vector3 currentAcceleration = accelerationSensor.Acceleration;
-        currentAcceleration.y = 0;
-        Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
-        rb.AddForce(force * movementForce);
-        rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
+        
+        if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)
+        {
+            var shakeForce = previousAcceleration * Time.fixedDeltaTime * 10000f;
+            rb.AddForce(shakeForce * movementForce);
+            rb.AddTorque(Vector3.Cross(shakeForce * rollForce, Vector3.down));
+            
+            previousAcceleration = currentAcceleration;
+        }
+        else
+        {
+            currentAcceleration.y = 0;
+            Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
+            rb.AddForce(force * movementForce);
+            rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
 
-        previousAcceleration = currentAcceleration;
+            previousAcceleration = currentAcceleration;
+        }
     }
-
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Ground"))
