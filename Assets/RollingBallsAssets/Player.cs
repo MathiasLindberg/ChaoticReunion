@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,12 +18,14 @@ public class Player : MonoBehaviour
     private bool leftKeyDown;
     private bool rightKeyDown;
     private Camera mainCam;
-
+    
     // Acceleration Sensor variables
     private Vector3 previousAcceleration;
     private bool isSensorConnected;
-
-    // Start is called before the first frame update
+    
+    public bool IsAlive { get; set; } = true;
+    public bool CanMove { get; set; }
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -46,8 +49,22 @@ public class Player : MonoBehaviour
                 {
                     ApplyMotion();
                 }*/
+        
+        if (!CanMove) return;
+        
+        if (Input.GetKeyDown(forwardKey)) forwardKeyDown = true;
+        else if (Input.GetKeyUp(forwardKey)) forwardKeyDown = false;
+        if (Input.GetKeyDown(backKey)) backKeyDown = true;
+        else if (Input.GetKeyUp(backKey)) backKeyDown = false;
+        if (Input.GetKeyDown(leftKey)) leftKeyDown = true;
+        else if (Input.GetKeyUp(leftKey)) leftKeyDown = false;
+        if (Input.GetKeyDown(rightKey)) rightKeyDown = true;
+        else if (Input.GetKeyUp(rightKey)) rightKeyDown = false;
 
-
+        if (forwardKeyDown || backKeyDown || leftKeyDown || rightKeyDown)
+        {
+            ApplyMotion();
+        }
     }
 
     private void ApplyMotion()
@@ -66,7 +83,7 @@ public class Player : MonoBehaviour
         rb.AddForce(force * movementForce);
         rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
     }
-
+    
     public void InitializeSensor()
     {
         isSensorConnected = true;
@@ -82,5 +99,14 @@ public class Player : MonoBehaviour
         rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
 
         previousAcceleration = currentAcceleration;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            IsAlive = false;
+            CanMove = false;
+        }
     }
 }
