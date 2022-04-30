@@ -5,6 +5,8 @@ public class UIViewManager : MonoBehaviour
 {
     [SerializeField] private List<UIView> uiViews = new();
 
+    public UIView CurrentUIView { get; set; }
+    
     public static UIViewManager Instance
     {
         get
@@ -33,6 +35,7 @@ public class UIViewManager : MonoBehaviour
             if (uiView.identifier.Equals(identifier))
             {
                 uiView.EnableView();
+                CurrentUIView = uiView;
                 break;
             }
         }
@@ -45,6 +48,7 @@ public class UIViewManager : MonoBehaviour
             if (uiView.identifier.Equals(identifier))
             {
                 uiView.EnableView();
+                CurrentUIView = uiView;
             }
             else
             {
@@ -60,6 +64,7 @@ public class UIViewManager : MonoBehaviour
             if (uiView.identifier.Equals(identifier))
             {
                 uiView.DisableView();
+                CurrentUIView = null;
             }
         }
     }

@@ -73,8 +73,8 @@ public class GameManager : MonoBehaviour
         }
         
         spawner.Spawn();
-        
-        yield return new WaitForSeconds(2.5f);
+
+        yield return null;
     }
 
     private IEnumerator GameStarting()
@@ -82,6 +82,17 @@ public class GameManager : MonoBehaviour
         GameState = GameStates.Starting;
 
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
+        
+        while (AmountOfPlayersShook() < 1)
+        {
+            yield return null;
+        }
+
+        // Ugly ...
+        ((GameStartingView) UIViewManager.Instance.CurrentUIView).shakeToPlay.SetActive(false);
+        ((GameStartingView) UIViewManager.Instance.CurrentUIView).gameCountdown.SetActive(true);
+        yield return new WaitForSeconds(3.25f);
+        ((GameStartingView) UIViewManager.Instance.CurrentUIView).gameCountdown.SetActive(false);
         
         foreach (var player in players)
         {
@@ -111,12 +122,20 @@ public class GameManager : MonoBehaviour
 
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
 
+        foreach (var player in players)
+            player.CanMove = false;
+
         yield return null;
     }
 
     private int AmountOfControllersConnected()
     {
         return players.Count(player => player.isSensorConnected);
+    }
+
+    private int AmountOfPlayersShook()
+    {
+        return players.Count(player => player.HasShaken);
     }
     
     private int AmountOfPlayersAlive()

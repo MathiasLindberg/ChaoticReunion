@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     
     public bool IsAlive { get; set; } = true;
     public bool CanMove { get; set; }
+    
+    public bool HasShaken { get; set; }
 
     private float shakeThreshold = 1.25f;
     private Vector3 oldAcceleration;
@@ -102,20 +104,24 @@ public class Player : MonoBehaviour
         
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)
         {
-            var shakeForce = previousAcceleration * Time.fixedDeltaTime * 10000f;
-            rb.AddForce(shakeForce * sensorMovementForce);
-            rb.AddTorque(Vector3.Cross(shakeForce * sensorRollForce, Vector3.down));
-            
-            previousAcceleration = currentAcceleration;
+            HasShaken = true;
+            //var shakeForce = previousAcceleration * Time.fixedDeltaTime * 10000f;
+            //rb.AddForce(shakeForce * sensorMovementForce);
+            //rb.AddTorque(Vector3.Cross(shakeForce * sensorRollForce, Vector3.down));
+
+            //previousAcceleration = currentAcceleration;
         }
         else
         {
-            currentAcceleration.y = 0;
-            Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
-            rb.AddForce(force * sensorMovementForce);
-            rb.AddTorque(Vector3.Cross(force * sensorRollForce, Vector3.down));
+            if (CanMove)
+            {
+                currentAcceleration.y = 0;
+                Vector3 force = currentAcceleration * Time.fixedDeltaTime * 1000.0f;
+                rb.AddForce(force * sensorMovementForce);
+                rb.AddTorque(Vector3.Cross(force * sensorRollForce, Vector3.down));
 
-            previousAcceleration = currentAcceleration;
+                previousAcceleration = currentAcceleration;
+            }
         }
     }
     

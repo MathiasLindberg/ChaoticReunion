@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameStartingView : UIView
 {
-
+    public GameObject shakeToPlay;
+    public GameObject gameCountdown;
 }
