@@ -21,6 +21,7 @@
 
 # Visual Studio cache directory
 .vs/
+.vsconfig
 
 # Gradle cache directory
 .gradle/
@@ -61,3 +62,6 @@ crashlytics-build.properties
 # Lego API gitignore
 Assets/- Quick Tips -/.DS_Store
 .DS_Store
+
+cpplog.txt
+InitializedMarker
