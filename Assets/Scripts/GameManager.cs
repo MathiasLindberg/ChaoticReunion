@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public enum GameStates
 {
@@ -14,6 +16,10 @@ public enum GameStates
 public class GameManager : MonoBehaviour
 {
     public GameStates GameState { get; set; }
+
+    [Header("Gameplay Elements")] 
+    [SerializeField] private List<Player> players = new List<Player>();
+    [SerializeField] private Spawner spawner;
     
     public static GameManager Instance
     {
@@ -54,6 +60,9 @@ public class GameManager : MonoBehaviour
     {
         GameState = GameStates.Initialising;
         Debug.Log("Current Game State: " + GameState);
+        
+        spawner.Spawn();
+        
         yield return new WaitForSeconds(2.5f);
     }
 
@@ -61,13 +70,26 @@ public class GameManager : MonoBehaviour
     {
         GameState = GameStates.Starting;
         Debug.Log("Current Game State: " + GameState);
-        yield return new WaitForSeconds(2.5f);
+
+        foreach (var player in players)
+        {
+            player.CanMove = true;
+        }
+        
+        yield return null;
     }
 
     private IEnumerator GameRunning()
     {
         GameState = GameStates.Running;
         Debug.Log("Current Game State: " + GameState);
+
+        while (AmountOfPlayersAlive() > 1)
+        {
+            Debug.Log("Running");
+            yield return null;
+        }
+        
         yield return new WaitForSeconds(2.5f);
     }
 
@@ -75,6 +97,19 @@ public class GameManager : MonoBehaviour
     {
         GameState = GameStates.Finishing;
         Debug.Log("Current Game State: " + GameState);
+        
+        
+        
         yield return null;
+    }
+
+    private int AmountOfPlayersAlive()
+    {
+        var playersAlive = players.Count;
+
+        foreach (var _ in players.Where(player => !player.IsAlive))
+            playersAlive--;
+
+        return playersAlive;
     }
 }

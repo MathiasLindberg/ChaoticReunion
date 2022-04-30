@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,10 @@ public class Player : MonoBehaviour
     private bool leftKeyDown;
     private bool rightKeyDown;
     private Camera mainCam;
-    // Start is called before the first frame update
+
+    public bool IsAlive { get; set; } = true;
+    public bool CanMove { get; set; }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,6 +30,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!CanMove) return;
+        
         if (Input.GetKeyDown(forwardKey)) forwardKeyDown = true;
         else if (Input.GetKeyUp(forwardKey)) forwardKeyDown = false;
         if (Input.GetKeyDown(backKey)) backKeyDown = true;
@@ -56,5 +62,14 @@ public class Player : MonoBehaviour
 
         rb.AddForce(force * movementForce);
         rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            IsAlive = false;
+            CanMove = false;
+        }
     }
 }

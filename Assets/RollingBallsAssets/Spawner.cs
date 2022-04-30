@@ -7,11 +7,12 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject gameObject;
     [SerializeField] private uint amount;
     // Start is called before the first frame update
-    void Start()
+
+    public void Spawn()
     {
-        Collider collider = GetComponent<Collider>();
-        Vector3 min = collider.bounds.min;
-        Vector3 max = collider.bounds.max;
+        var collider = GetComponent<Collider>();
+        var min = collider.bounds.min;
+        var max = collider.bounds.max;
 
         if (gameObject)
         {
@@ -22,11 +23,5 @@ public class Spawner : MonoBehaviour
                 instance.transform.position = spawnPoint;
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
