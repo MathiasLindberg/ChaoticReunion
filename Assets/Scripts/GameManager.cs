@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,7 +17,7 @@ public class GameManager : MonoBehaviour
     public GameStates GameState { get; set; }
 
     [Header("Gameplay Elements")] 
-    [SerializeField] private List<Player> players = new List<Player>();
+    [SerializeField] private List<Player> players = new();
     [SerializeField] private Spawner spawner;
     
     public static GameManager Instance

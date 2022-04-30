@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class UIViewManager : MonoBehaviour
 {
-    [SerializeField] private List<UIView> uiViews = new List<UIView>();
+    [SerializeField] private List<UIView> uiViews = new();
 
     public static UIViewManager Instance
     {
