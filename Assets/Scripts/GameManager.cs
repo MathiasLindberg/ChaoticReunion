@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public enum GameStates
 {
@@ -50,6 +52,14 @@ public class GameManager : MonoBehaviour
         StartCoroutine(GameLoop());
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
     private IEnumerator GameLoop()
     {
         yield return StartCoroutine(GameInitialising());
@@ -82,12 +92,15 @@ public class GameManager : MonoBehaviour
         GameState = GameStates.Starting;
 
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
-        
-        while (AmountOfPlayersShook() < 1)
-        {
-            yield return null;
-        }
 
+        if (ignoreInsufficientAmountOfControllers)
+        {
+            while (AmountOfPlayersShook() < 1)
+            {
+                yield return null;
+            }
+        }
+        
         // Ugly ...
         ((GameStartingView) UIViewManager.Instance.CurrentUIView).shakeToPlay.SetActive(false);
         ((GameStartingView) UIViewManager.Instance.CurrentUIView).gameCountdown.SetActive(true);
