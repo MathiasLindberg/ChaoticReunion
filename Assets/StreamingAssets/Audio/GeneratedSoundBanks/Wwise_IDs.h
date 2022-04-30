@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_ANNOYINGGAMEMUSIC = 2721505640U;
         static const AkUniqueID PLAY_FACTORYAMBIENCE = 4037641288U;
+        static const AkUniqueID PLAY_LEGOCONNECT = 437071513U;
         static const AkUniqueID PLAY_LEGONOISES = 2910028272U;
         static const AkUniqueID STOP_ANNOYINGGAMEMUSIC = 2573728290U;
         static const AkUniqueID STOP_FACTORYAMBIENCE = 322622062U;
@@ -23,6 +24,8 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ENGINESPEED = 3350583156U;
+        static const AkUniqueID RTPC_BRICKNUMBER = 3743445693U;
+        static const AkUniqueID RTPC_BRICKSPEED = 3984738255U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
