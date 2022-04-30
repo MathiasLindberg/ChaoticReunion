@@ -59,8 +59,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameInitialising()
     {
         GameState = GameStates.Initialising;
-        Debug.Log("Current Game State: " + GameState);
-        
+
         spawner.Spawn();
         
         yield return new WaitForSeconds(2.5f);
@@ -69,8 +68,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameStarting()
     {
         GameState = GameStates.Starting;
-        Debug.Log("Current Game State: " + GameState);
 
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+        
         foreach (var player in players)
         {
             player.CanMove = true;
@@ -82,24 +82,23 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameRunning()
     {
         GameState = GameStates.Running;
-        Debug.Log("Current Game State: " + GameState);
+        
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
 
         while (AmountOfPlayersAlive() > 1)
         {
-            Debug.Log("Running");
             yield return null;
         }
-        
-        yield return new WaitForSeconds(2.5f);
+
+        yield return null;
     }
 
     private IEnumerator GameFinishing()
     {
         GameState = GameStates.Finishing;
-        Debug.Log("Current Game State: " + GameState);
-        
-        
-        
+
+        UIViewManager.Instance.EnableUIViewExclusive(GameState);
+
         yield return null;
     }
 
