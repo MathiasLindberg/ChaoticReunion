@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using EZCameraShake;
 
 public class Brick : MonoBehaviour
 {
@@ -61,6 +62,11 @@ public class Brick : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (!setup || isPlayer) return;
+
+        if (collision.gameObject.CompareTag("Brick") && collision.impulse.magnitude > 3 && GameManager.Instance.GameState.Equals(GameStates.Running))
+        {
+            CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
+        }
 
         if (attached)
         {
