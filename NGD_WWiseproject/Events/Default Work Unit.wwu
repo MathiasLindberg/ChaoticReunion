@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8039195-CE3A-440A-8B5F-308561410089}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{D8039195-CE3A-440A-8B5F-308561410089}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_LegoNoises" ID="{437CA2F7-01E1-493A-8C43-668CAB2217FA}">
+					<ChildrenList>
+						<Action Name="" ID="{41DF5E12-4562-40DD-83C6-BBF64B8887F7}" ShortID="341575447">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LegoNoises" ID="{97C83F68-6AA7-4659-83E4-39B497B31A4E}" WorkUnitID="{429504EB-2595-4219-9748-903BA715DB27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AnnoyingGameMusic" ID="{4BF0BF65-5096-4E64-B995-FED37484E54F}">
+					<ChildrenList>
+						<Action Name="" ID="{173E52E9-F6EB-438D-A8A9-2FAE93D686BB}" ShortID="540040884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AnnoyingGameMusic" ID="{FE2EEACE-2787-401C-A6F4-6CF4DDBDD45B}" WorkUnitID="{429504EB-2595-4219-9748-903BA715DB27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AnnoyingGameMusic" ID="{10679B72-1B84-4B33-9657-90F3D5AF9358}">
+					<ChildrenList>
+						<Action Name="" ID="{E9EE3F14-5006-4C4A-8A52-6F055A1D5866}" ShortID="6612925">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AnnoyingGameMusic" ID="{FE2EEACE-2787-401C-A6F4-6CF4DDBDD45B}" WorkUnitID="{429504EB-2595-4219-9748-903BA715DB27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FactoryAmbience" ID="{FF6FB982-AF66-4F95-9992-BE4D477FAE68}">
+					<ChildrenList>
+						<Action Name="" ID="{941DBA82-C8D2-47B5-A90E-12F6F40D4608}" ShortID="101268446">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FactoryAmbience" ID="{A8552F7B-FCA3-493B-8866-2DEBE2BC072A}" WorkUnitID="{9F22C09F-5618-4323-892C-697B3C39774E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_FactoryAmbience" ID="{02272A24-D448-4976-8C9B-7D7C753E71B9}">
+					<ChildrenList>
+						<Action Name="" ID="{D6DAFC33-A23E-422B-A204-30BD7B47E67A}" ShortID="377537132">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FactoryAmbience" ID="{A8552F7B-FCA3-493B-8866-2DEBE2BC072A}" WorkUnitID="{9F22C09F-5618-4323-892C-697B3C39774E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LegoConnect" ID="{6EF7E827-18C0-404E-9095-B27724375D80}">
+					<ChildrenList>
+						<Action Name="" ID="{20ED578D-42B2-479D-9F1D-185B0929AFAF}" ShortID="207797532">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LegoConnect" ID="{5E04B8A6-EEFA-4D66-AACA-404A9A7723F2}" WorkUnitID="{429504EB-2595-4219-9748-903BA715DB27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

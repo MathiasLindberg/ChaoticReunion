@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B466041D-A712-4D53-9F13-65E532F49D7E}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B466041D-A712-4D53-9F13-65E532F49D7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{8303B134-9B5A-47DF-93C2-564E497EC2F5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_LegoConnect" ID="{6EF7E827-18C0-404E-9095-B27724375D80}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LegoNoises" ID="{437CA2F7-01E1-493A-8C43-668CAB2217FA}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_FactoryAmbience" ID="{02272A24-D448-4976-8C9B-7D7C753E71B9}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_AnnoyingGameMusic" ID="{10679B72-1B84-4B33-9657-90F3D5AF9358}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_AnnoyingGameMusic" ID="{4BF0BF65-5096-4E64-B995-FED37484E54F}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FactoryAmbience" ID="{FF6FB982-AF66-4F95-9992-BE4D477FAE68}" WorkUnitID="{D8039195-CE3A-440A-8B5F-308561410089}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

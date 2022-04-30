@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\jakob\Documents\WwiseProjects\NGD\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\jakob\Documents\WwiseProjects\NGD\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\jakob\Documents\WwiseProjects\NGD\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\jakob\Documents\WwiseProjects\NGD\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4217083082">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="574219687">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2721505640" Name="Play_AnnoyingGameMusic" ObjectPath="\Events\Default Work Unit\Play_AnnoyingGameMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="736007172" Language="SFX">
+							<ShortName>Music - Fluffys Carrot Farm.wav</ShortName>
+							<Path>SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4037641288" Name="Play_FactoryAmbience" ObjectPath="\Events\Default Work Unit\Play_FactoryAmbience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24071535" Language="SFX">
+							<ShortName>Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936.wav</ShortName>
+							<Path>SFX\Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936_9EDFC787.wem</Path>
+						</File>
+						<File Id="32723619" Language="SFX">
+							<ShortName>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2.wav</ShortName>
+							<Path>SFX\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2_9EDFC787.wem</Path>
+						</File>
+						<File Id="36201962" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2_9EDFC787.wem</Path>
+						</File>
+						<File Id="187785209" Language="SFX">
+							<ShortName>Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1.wav</ShortName>
+							<Path>SFX\Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1_9EDFC787.wem</Path>
+						</File>
+						<File Id="200346713" Language="SFX">
+							<ShortName>Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211.wav</ShortName>
+							<Path>SFX\Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211_9EDFC787.wem</Path>
+						</File>
+						<File Id="599244525" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182_9EDFC787.wem</Path>
+						</File>
+						<File Id="626537445" Language="SFX">
+							<ShortName>Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263.wav</ShortName>
+							<Path>SFX\Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263_9EDFC787.wem</Path>
+						</File>
+						<File Id="699974028" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122_9EDFC787.wem</Path>
+						</File>
+						<File Id="718972042" Language="SFX">
+							<ShortName>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275.wav</ShortName>
+							<Path>SFX\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275_9EDFC787.wem</Path>
+						</File>
+						<File Id="759609200" Language="SFX">
+							<ShortName>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1.wav</ShortName>
+							<Path>SFX\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1_9EDFC787.wem</Path>
+						</File>
+						<File Id="989663726" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3_9EDFC787.wem</Path>
+						</File>
+						<File Id="1010511026" Language="SFX">
+							<ShortName>Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260.wav</ShortName>
+							<Path>SFX\Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="437071513" Name="Play_LegoConnect" ObjectPath="\Events\Default Work Unit\Play_LegoConnect" DurationType="OneShot" DurationMin="0.020387" DurationMax="0.288229">
+					<IncludedMemoryFiles>
+						<File Id="30056517" Language="SFX">
+							<ShortName>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N.wav</ShortName>
+							<Path>SFX\Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N_50B55D1A.wem</Path>
+						</File>
+						<File Id="40133100" Language="SFX">
+							<ShortName>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N.wav</ShortName>
+							<Path>SFX\Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N_9D04D978.wem</Path>
+						</File>
+						<File Id="267889459" Language="SFX">
+							<ShortName>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N.wav</ShortName>
+							<Path>SFX\Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N_46002348.wem</Path>
+						</File>
+						<File Id="353908837" Language="SFX">
+							<ShortName>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N.wav</ShortName>
+							<Path>SFX\Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N_295ECAFA.wem</Path>
+						</File>
+						<File Id="964917904" Language="SFX">
+							<ShortName>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N.wav</ShortName>
+							<Path>SFX\Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N_7C98C170.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2910028272" Name="Play_LegoNoises" ObjectPath="\Events\Default Work Unit\Play_LegoNoises" DurationType="OneShot" DurationMin="0.162056" DurationMax="1.114177">
+					<IncludedMemoryFiles>
+						<File Id="113057153" Language="SFX">
+							<ShortName>Aalborg Universitet - København 4N 3.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 4N 3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="182845245" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N_7C1AEFB8.wem</Path>
+						</File>
+						<File Id="332203740" Language="SFX">
+							<ShortName>Aalborg Universitet - København 4N 1.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 4N 1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="402690642" Language="SFX">
+							<ShortName>Aalborg Universitet - København 3N 3.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 3N 3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="589251723" Language="SFX">
+							<ShortName>Aalborg Universitet - København 4N 2.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 4N 2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="621686310" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N_86F58DB4.wem</Path>
+						</File>
+						<File Id="663247525" Language="SFX">
+							<ShortName>Aalborg Universitet - København 3N.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 3N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="671966137" Language="SFX">
+							<ShortName>Aalborg Universitet - København 3N 1.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 3N 1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="712106535" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N_5C5D40F7.wem</Path>
+						</File>
+						<File Id="742999291" Language="SFX">
+							<ShortName>Aalborg Universitet - København 3N 2.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 3N 2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="777745499" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N_9091A3C7.wem</Path>
+						</File>
+						<File Id="806999687" Language="SFX">
+							<ShortName>Aalborg Universitet - KøbenhavnN.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - KøbenhavnN_3F75BDB9.wem</Path>
+						</File>
+						<File Id="871084263" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N_B82A0CD3.wem</Path>
+						</File>
+						<File Id="891812067" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N_354EBDE8.wem</Path>
+						</File>
+						<File Id="903663762" Language="SFX">
+							<ShortName>Aalborg Universitet - København 4N 4.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 4N 4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="960732482" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N_E94BDE44.wem</Path>
+						</File>
+						<File Id="1069229389" Language="SFX">
+							<ShortName>Aalborg Universitet - København 4N.wav</ShortName>
+							<Path>SFX\Aalborg Universitet - København 4N_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2573728290" Name="Stop_AnnoyingGameMusic" ObjectPath="\Events\Default Work Unit\Stop_AnnoyingGameMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="322622062" Name="Stop_FactoryAmbience" ObjectPath="\Events\Default Work Unit\Stop_FactoryAmbience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3743445693" Name="RTPC_BrickNumber" ObjectPath="\Game Parameters\Default Work Unit\RTPC_BrickNumber"/>
+				<GameParameter Id="3984738255" Name="RTPC_BrickSpeed" ObjectPath="\Game Parameters\Default Work Unit\RTPC_BrickSpeed"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

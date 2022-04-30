@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: f7a27c43e1013a498c43668cab2217fa
       Path: Events\Default Work Unit\Play_LegoNoises
       maxAttenuation: 0
-      maxDuration: 0.450103
-      minDuration: 0.213791
+      maxDuration: 1.114177
+      minDuration: 0.162056
     - name: Stop_AnnoyingGameMusic
       guid: 729b6710841b334b965790f3d5af9358
       id: 2573728290
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_lastTime: -8585503470441903908
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000f00000010000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
