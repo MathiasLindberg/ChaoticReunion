@@ -131,11 +131,16 @@ MonoBehaviour:
   backKey: 0
   leftKey: 0
   rightKey: 0
+  shootKey: 306
   rollForce: 3
   movementForce: 0.2
   sensorRollForce: 2
-  sensorMovementForce: 2
+  sensorMovementForce: 4
   accelerationSensor: {fileID: 0}
+  arrow: {fileID: 0}
+  playfieldLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &-80673488593737268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +157,23 @@ MonoBehaviour:
   breakTorque: 10
   width: 2
   height: 2
+  shootableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &2392406151691242358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093698031498455934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db23dfa13162e374ebc434df17384bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceSensor: {fileID: 0}
+  jumpForce: 200
+  shootingForce: 100
+  impactForce: 5
+  particleSystem: {fileID: 0}
