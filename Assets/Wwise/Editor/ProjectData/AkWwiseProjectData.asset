@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b888ea2c0e8b51488976c9892fd74cbf
     GuidInternal: 
-    m_lastTime: -8585502163970508058
+    m_lastTime: -8585502132129000696
     List:
     - name: Main
       guid: 04abc5792752054fbf779617e3c172e1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0eccda7c926304790f8d25e75c3549a
     GuidInternal: 
-    m_lastTime: -8585502163970348479
+    m_lastTime: -8585502132128871038
     List:
+    - name: Play_Camerashake
+      guid: 7c566372e9c0a6489933f57e2754a9cc
+      id: 108991751
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0eccda7c926304790f8d25e75c3549a
+      - ElementName: Play_Camerashake
+        ObjectType: 3
+        guid: 7c566372e9c0a6489933f57e2754a9cc
+      Path: Events\Default Work Unit\Play_Camerashake
+      maxAttenuation: 0
+      maxDuration: 3.628761
+      minDuration: 2.750087
     - name: Play_LegoImpacts
       guid: ea59253ab07f724eba8dcde66003e95d
       id: 2482245838

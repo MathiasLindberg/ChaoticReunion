@@ -758,18 +758,23 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0</YPos>
+														<YPos>-278</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>998</YPos>
+														<YPos>554</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
 											</Curve>
 										</RTPC>
 									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1665,6 +1670,120 @@
 						<ActiveSource Name="Music - Fluffys Carrot Farm" ID="{1292D5C0-4F52-4AF8-B364-A301C08A1864}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Camerashake" ID="{B3FD2477-D4A2-4AC6-A5DA-D4E4104AB8EC}" ShortID="457741356">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>560</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{155D4304-3DC9-42FA-919E-1AF3B3C95CE8}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="303"/>
+											<Property Name="Min" Type="Real64" Value="-177"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Camerashake" ID="{BFCA9D1D-F355-4BC8-B1B8-D3B96DD8C4BD}" ShortID="705542900">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Natural Disaster, Earthquake, Impact, Small Crack 05 SND13417" ID="{8B7D308F-EB4A-4C6F-A552-BABE1495904B}" ShortID="143255179">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Natural Disaster, Earthquake, Impact, Small Crack 05 SND13417" ID="{9050671E-3046-4893-A63D-42C00C046AFE}">
+											<Language>SFX</Language>
+											<AudioFile>Natural Disaster, Earthquake, Impact, Small Crack 05 SND13417.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="352236991"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Natural Disaster, Earthquake, Impact, Small Crack 05 SND13417" ID="{9050671E-3046-4893-A63D-42C00C046AFE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Natural Disaster, Earthquake, Rumble, Rocks In Motion 01 SND13403" ID="{EC1A9D41-DC8D-4483-8AFC-E887956E5854}" ShortID="1045660990">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Natural Disaster, Earthquake, Rumble, Rocks In Motion 01 SND13403" ID="{57293663-EB80-4312-8A4C-B3CC713BDC0D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.35516464552239"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.35516464552239"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Natural Disaster, Earthquake, Rumble, Rocks In Motion 01 SND13403.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="652437409"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Natural Disaster, Earthquake, Rumble, Rocks In Motion 01 SND13403" ID="{57293663-EB80-4312-8A4C-B3CC713BDC0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

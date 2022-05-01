@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Camerashake" ID="{7263567C-C0E9-48A6-9933-F57E2754A9CC}">
+					<ChildrenList>
+						<Action Name="" ID="{B453AAE3-B6E8-43FE-8180-D24156716E19}" ShortID="320318248">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Camerashake" ID="{B3FD2477-D4A2-4AC6-A5DA-D4E4104AB8EC}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

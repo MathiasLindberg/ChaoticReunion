@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="Event Action List\{136A3B8F-A325-4848-9674-9FF24073D6A8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3A2559EA-7FB0-4E72-BA8D-CDE66003E95D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7263567C-C0E9-48A6-9933-F57E2754A9CC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
