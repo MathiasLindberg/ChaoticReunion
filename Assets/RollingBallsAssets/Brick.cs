@@ -37,22 +37,26 @@ public class Brick : MonoBehaviour
         int RandomColour = Random.Range(1,7);
 
         ChildBricks = new List<Brick>();
-
-        Material mat = GetComponent<MeshRenderer>().material;
-        
-          if (RandomColour == 1) { mat.color = new Color(217f / 255f, 217f / 255f, 214f / 255f); } //white
-          if (RandomColour == 2) { mat.color = new Color(225f / 255f, 205f / 255f, 000f / 255f); } //yellow 
-          if (RandomColour == 3) { mat.color = new Color(245f / 255f, 046f / 255f, 064f / 255f); } //red
-          if (RandomColour == 4) { mat.color = new Color(000f / 255f, 061f / 255f, 165f / 255f); } //blue
-          if (RandomColour == 5) { mat.color = new Color(039f / 255f, 037f / 255f, 031f / 255f); } //black
-          if (RandomColour == 6) { mat.color = new Color(000f / 255f, 132f / 255f, 061f / 255f); } //green
-          if (RandomColour == 7) { mat.color = new Color(105f / 255f, 063f / 255f, 035f / 255f); } //brown 
-          
-        collider = GetComponent<Collider>();
-
         Player player;
         IsPlayer = TryGetComponent(out player);
         IsChainedToPlayer = IsPlayer;
+
+        if (!IsPlayer)
+        {
+            Material mat = GetComponent<MeshRenderer>().material;
+        
+            if (RandomColour == 1) { mat.color = new Color(217f / 255f, 217f / 255f, 214f / 255f); } //white
+            if (RandomColour == 2) { mat.color = new Color(225f / 255f, 205f / 255f, 000f / 255f); } //yellow 
+            if (RandomColour == 3) { mat.color = new Color(245f / 255f, 046f / 255f, 064f / 255f); } //red
+            if (RandomColour == 4) { mat.color = new Color(000f / 255f, 061f / 255f, 165f / 255f); } //blue
+            if (RandomColour == 5) { mat.color = new Color(039f / 255f, 037f / 255f, 031f / 255f); } //black
+            if (RandomColour == 6) { mat.color = new Color(000f / 255f, 132f / 255f, 061f / 255f); } //green
+            if (RandomColour == 7) { mat.color = new Color(105f / 255f, 063f / 255f, 035f / 255f); } //brown 
+        }
+          
+        collider = GetComponent<Collider>();
+
+        
 
         upperAttachments = new List<AttachmentPoint>(width * height);
         lowerAttachments = new List<AttachmentPoint>(width * height);
@@ -141,6 +145,13 @@ public class Brick : MonoBehaviour
     {
         if (!setup || IsPlayer) return;
 
+        var brickComponent = collision.gameObject.GetComponent<Brick>();
+        if (collision.gameObject.CompareTag("Brick") && brickComponent.IsChainedToPlayer && GameManager.Instance.GameState.Equals(GameStates.Running))
+        {
+            CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
+            AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
+        }
+
         if (attached && !IsChainedToPlayer && collision.collider.TryGetComponent(out Brick brick) && brick.IsChainedToPlayer)
         {
             Detach();
@@ -212,11 +223,6 @@ public class Brick : MonoBehaviour
             foreach (Collider collider in Physics.OverlapSphere(transform.position, radius, shootableLayer.value))
             {
                 if (collider == this.collider) continue;
-                if (TryGetComponent(out Brick brick) && GameManager.Instance.GameState.Equals(GameStates.Running))
-                {
-                    CameraShaker.Instance.ShakeOnce(1, 1, 0.5f, 0.5f);
-                    AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
-                }
                 collider.GetComponent<Rigidbody>().AddForce((collider.transform.position - transform.position).normalized * emitForce, ForceMode.Impulse);
             }
             emitLastPulseTime = t;
