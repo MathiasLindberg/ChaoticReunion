@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Brick
   - Ground
+  - Walls
   layers:
   - Default
   - TransparentFX

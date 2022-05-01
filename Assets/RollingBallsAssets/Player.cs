@@ -134,11 +134,11 @@ public class Player : MonoBehaviour
                 Brick brick = GetComponent<Brick>();
                 foreach (Brick child in brick.ChildBricks)
                 {
-                    child.GetComponent<Rigidbody>().AddForce(force * sensorMovementForce);
+                    child.GetComponent<Rigidbody>().AddForce(force * (sensorMovementForce / 100.0f));
                 }
-                rb.AddForce(force * sensorMovementForce);
+                rb.AddForce(force * (sensorMovementForce / 100.0f));
                 rb.AddTorque(Vector3.Cross(force * sensorRollForce, Vector3.down));
-
+                MovementDirection = force.normalized * movingAvgRatio + MovementDirection * (1.0f - movingAvgRatio);
                 previousAcceleration = currentAcceleration;
             }
         }

@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{79C5AB04-5227-4F05-BF77-9617E3C172E1}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_LegoShot" ID="{92572515-CE5E-41E5-A513-0C6AC383B80A}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BrickWall" ID="{5A188EF7-0E3C-43E2-A10C-63ACC44CFD4E}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music___Fluffys_Carrot_Farm" ID="{136A3B8F-A325-4848-9674-9FF24073D6A8}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Camerashake" ID="{7263567C-C0E9-48A6-9933-F57E2754A9CC}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Playermovement" ID="{8F380C38-085D-4D77-8DA7-614A56A31C6C}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
