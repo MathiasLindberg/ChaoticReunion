@@ -65,13 +65,13 @@ public class Player : MonoBehaviour
         if (forwardKeyDown || backKeyDown || leftKeyDown || rightKeyDown)
         {
             ApplyMotion();
-            UpdateArrow();
             if (Input.GetKeyDown(shootKey)) GetComponent<Jump>().AddJumpingForce(true);
         }
         else
         {
             arrowInstance.transform.position = Vector3.zero;
         }
+        UpdateArrow();
     }
 
     private void ApplyMotion()
@@ -119,7 +119,6 @@ public class Player : MonoBehaviour
 
     public void ApplyAccelerationFromSensor()
     {
-        UpdateArrow();
         Vector3 currentAcceleration = accelerationSensor.Acceleration;
         
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)

@@ -13,6 +13,7 @@ public class Brick : MonoBehaviour
     [SerializeField] int height = 2;
     [SerializeField] LayerMask shootableLayer;
     [SerializeField] bool bottomOnly;
+    [SerializeField] private bool dontChangeColor;
     private bool attached;
     private Brick parentBrick;
     public List<Brick> ChildBricks { get; private set; }
@@ -32,6 +33,7 @@ public class Brick : MonoBehaviour
     private float jointAttachmentTime;
     private bool ignoreShake;
 
+
     void Start()
     {
         int RandomColour = Random.Range(1,7);
@@ -45,6 +47,8 @@ public class Brick : MonoBehaviour
         {
             Material mat = GetComponent<MeshRenderer>().material;
         
+        if (dontChangeColor == false)
+        {
             if (RandomColour == 1) { mat.color = new Color(217f / 255f, 217f / 255f, 214f / 255f); } //white
             if (RandomColour == 2) { mat.color = new Color(225f / 255f, 205f / 255f, 000f / 255f); } //yellow 
             if (RandomColour == 3) { mat.color = new Color(245f / 255f, 046f / 255f, 064f / 255f); } //red
