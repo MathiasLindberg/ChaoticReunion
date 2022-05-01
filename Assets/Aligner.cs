@@ -19,8 +19,10 @@ public class Aligner : MonoBehaviour
     }
     private void Align()
     {
-        float yRot = Mathf.Atan2(Direction.z, Direction.x) * Mathf.Rad2Deg;
-        transform.SetPositionAndRotation(parent.transform.position, Quaternion.AngleAxis(yRot, Vector3.down));
+        float yRot = Mathf.Atan(Direction.x / Direction.z) * Mathf.Rad2Deg;
+        Vector3 fwd = new Vector3(transform.forward.x, 0, transform.forward.z);
+        transform.position = parent.transform.position;
+        transform.forward = fwd;
     }
     private void OnDrawGizmos()
     {
