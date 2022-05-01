@@ -133,14 +133,13 @@ public class Brick : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!setup || IsPlayer) return;
-
-        var brickComponent = collision.gameObject.GetComponent<Brick>();
-        if (collision.gameObject.CompareTag("Brick") && brickComponent.IsChainedToPlayer && GameManager.Instance.GameState.Equals(GameStates.Running))
+        if (collision.gameObject.CompareTag("Walls") && (IsChainedToPlayer || IsPlayer) && GameManager.Instance.GameState.Equals(GameStates.Running))
         {
-            CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
+            CameraShaker.Instance.ShakeOnce(1, 1, 0.5f, 0.5f);
             AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
         }
+        
+        if (!setup || IsPlayer) return;
 
         if (attached && !IsChainedToPlayer && collision.collider.TryGetComponent(out Brick brick) && brick.IsChainedToPlayer)
         {
