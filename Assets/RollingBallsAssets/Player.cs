@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
 
     private void UpdateArrow()
     {
+        Debug.Log("aaaa");
         if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out RaycastHit hit, 100, playfieldLayerMask.value, QueryTriggerInteraction.Collide))
         {
             Vector3 fwd = new Vector3(MovementDirection.x, 0, MovementDirection.z);
@@ -119,6 +120,7 @@ public class Player : MonoBehaviour
 
     public void ApplyAccelerationFromSensor()
     {
+        UpdateArrow();
         Vector3 currentAcceleration = accelerationSensor.Acceleration;
         
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)
