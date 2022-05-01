@@ -1,6 +1,1453 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{913262C4-8033-4FB0-B4CB-8E61AE3DD3EF}" SchemaVersion="103">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{913262C4-8033-4FB0-B4CB-8E61AE3DD3EF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{913262C4-8033-4FB0-B4CB-8E61AE3DD3EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="Factory_Ambience" ID="{5A574576-3497-4517-B5B6-5496F744F249}" ShortID="112104863">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="56915.0833333333"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-31</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{B322E5B8-9DE8-4778-AC32-654BD76E7B3F}" ShortID="290695385">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{B0762648-7993-4950-B4BC-33E82269FB0F}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="485481005"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{1A121BBF-1EBA-4579-83A3-448950AC9420}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{E269F014-90AB-4F7E-B77D-16270188FC43}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{E98D289C-7B8F-4327-9417-460859A1126B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="9807.02083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{B0762648-7993-4950-B4BC-33E82269FB0F}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{259829E6-0B7C-4852-89A1-F65AC6A1D985}" ShortID="596711327">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{4E2467BA-9334-4B4D-9F61-4B445F7AE8E7}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="45382381"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{D0AEFC98-AA3B-4865-A812-A2E610A7E90E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{FD57E704-0B8E-4F8F-8A03-F7F0F8A10B19}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{24DF5733-980A-488E-8F57-D41E88BAB125}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25077.8958333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{4E2467BA-9334-4B4D-9F61-4B445F7AE8E7}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{6619F56D-235C-45FF-BE5A-590FFDB35F92}" ShortID="87315035">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{1BDF802B-04B2-4A1C-A112-018FA51D2A4E}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="58592459"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{CAB8DF9A-B9C8-48B9-B6A4-9B1FC3987BC9}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{BCA6A14C-5695-481E-A1C7-F345AC771B7C}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{087FD2CC-1365-4300-8A0A-5CF4F36FB39F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="22355.9895833333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{1BDF802B-04B2-4A1C-A112-018FA51D2A4E}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{8D114E15-B703-4C68-A5FF-7E944B970D11}" ShortID="867198667">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{A8FCF2EE-8612-4F57-A21C-4262AA625268}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="567861597"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{CC006BC1-9FA9-427E-961F-6D2B2C4E7446}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{AFF01DCB-9789-472A-BF22-DE200C9C23CD}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{8AE1C9B2-3403-4C5A-A27C-109812DECC69}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="20864.0729166667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{A8FCF2EE-8612-4F57-A21C-4262AA625268}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{1632E0A4-F7F4-4F3A-9518-6B518F0E2984}" ShortID="366983518">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{A33B7929-6A30-4AD8-B25B-80421F1F6B52}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Industrial, Factory Hum, Light Activity 03 SND49122.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="436537027"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{5EAEC3B3-BE50-4483-B97D-6F36FDFCD6FD}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{99F953FD-62EE-4DDB-815A-CC7071F0E403}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{5D183633-D760-4E84-B33C-CB14D1260553}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="16479.4166666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{A33B7929-6A30-4AD8-B25B-80421F1F6B52}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{ABB8BE9F-DDE0-4F8A-9A61-654CBEFCCE6E}" ShortID="791441383">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{11B36340-4682-448B-A543-604F5DF0A9EB}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="411602622"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{96BB0FCB-E91F-4292-AEAE-5C12ABE78D9A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{507DDACD-A463-4F9E-B588-744EDE738CFE}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{15483A65-3D69-4F9D-AA3F-89AD00130429}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="9263.63541666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{11B36340-4682-448B-A543-604F5DF0A9EB}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{F4CE0E80-B5EE-420D-A3FB-A8D33B42233B}" ShortID="731090801">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{BE858177-B000-40B8-8605-F37CB8FFA701}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="208808841"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{7A8C51EF-A41D-4153-A687-889064DFF0F0}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{F4349DEB-A9C3-422D-8303-EE2D5C44B20B}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{B9D3E1CD-614C-43F0-960C-3545DA8B63EB}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="37473.6770833333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{BE858177-B000-40B8-8605-F37CB8FFA701}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{CF055E57-42D2-4E3E-831B-4B8F04CF0A0F}" ShortID="373360461">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{24C8F5B2-E96F-4E4C-9626-B5981B387B3B}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1857893"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{6E5E8079-7B36-451C-923A-5904643459D7}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{369D86D8-12E0-44FB-AD99-34439DD3204D}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{D56A0E05-0544-47B7-8A2C-A47F512E00F2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="28700"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{24C8F5B2-E96F-4E4C-9626-B5981B387B3B}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{8BCEF647-0271-4014-BFDE-007EA47BF86D}" ShortID="747957683">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{D108CD5B-C3DE-4A4E-8859-5CFA3EF5B2DF}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="599712593"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{2D8D0F0B-FD23-48F4-B136-BAAB28F4F412}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{44F7CF52-3222-4508-A5FF-8D916DAEBAA4}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{6168720A-6E6B-4782-B8DF-6481CF898C18}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="1192.05208333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{D108CD5B-C3DE-4A4E-8859-5CFA3EF5B2DF}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{8F40ECD6-4EF5-4EA7-AE32-074F36B59037}" ShortID="218484933">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{72F4107B-9689-4E57-9ADA-239345A0B925}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="977270522"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{2EC1A7DF-2724-492E-81DD-F65EF662633C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{9A67CBFB-B2A9-46BD-961E-3A071E811B41}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{7F7AE12F-83AD-497E-9106-E581BC9BEE32}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="1863.45833333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{72F4107B-9689-4E57-9ADA-239345A0B925}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{E3650FC2-B017-43B9-AF33-BF7E294F4FD5}" ShortID="742937337">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{A052D497-D443-4BE3-9053-350055F1B7A0}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="973836767"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{59DE606A-4E1A-44B0-9C28-1D4A2A075D11}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{C4C502AD-8BB0-4434-9075-A8E2573427A8}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{97917E83-A681-4365-9901-2BCA4A10A4F0}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="1834.42708333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{A052D497-D443-4BE3-9053-350055F1B7A0}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{C3EE3657-68A4-414B-9530-51E013F03235}" ShortID="94628828">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{907F249A-F59F-4B2C-848A-D50C7C9E311D}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="87416398"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A800A626-F5BE-41F7-8D80-7881478CDD1A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{FA274956-ED9F-4E94-B45E-EB258175BB6F}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{F9B7F407-FF2F-45A7-8F23-84EDE4F4D870}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2337.80208333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{907F249A-F59F-4B2C-848A-D50C7C9E311D}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{09EBD8BC-56C3-4223-8820-42A509DB592D}" ShortID="250778330">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{EA9E4731-7785-40E9-BF4E-12487F56C135}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="900969316"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{904AE4BE-01E2-4775-9377-C295ED52448A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{160C194E-D698-4FE6-A5E8-500D32025CE1}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{527CBC59-D35E-4D9A-A1C6-6758547167C6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="31270.75"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{EA9E4731-7785-40E9-BF4E-12487F56C135}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{0BC7E2CB-5824-42EF-868E-EC596BE7E79C}" ShortID="114942122">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{2D294A1C-2D17-4A9B-B898-B6BC665CFC8E}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1058089191"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{27A9B323-4476-4ED8-9241-949350D8B010}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{713337DE-AE53-4700-B5E1-2726FA0148BF}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{D75E0029-5B33-461C-B38F-6F72C12D7774}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="56915.0833333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{2D294A1C-2D17-4A9B-B898-B6BC665CFC8E}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{5AAA0760-B30B-48FE-B219-4EFE00277DDD}" ShortID="103135941">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{FD2B428C-DE2F-4368-BB8E-84AF3F6BA8A1}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="752401941"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{EC25528E-9E9D-4EC1-9437-B881A08FDB4D}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{39FB8487-9EE1-4850-9D87-ECDD737AD485}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{991AACD5-C025-49F7-94C4-98D1ADB8776D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6376.55208333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{FD2B428C-DE2F-4368-BB8E-84AF3F6BA8A1}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{D4716238-5CC0-497C-8F8C-E6C4F70FE35D}" ShortID="25131301">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{A5D846DD-0920-43CC-ADC6-F0493211938F}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="764316879"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9868D3DC-E78B-49D9-954D-0B5CD41D52A1}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{D97DBF64-A19A-4CA1-9E65-7172FFF38985}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{C6CBF0C6-0854-4E64-ADFD-A2A87D70700D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7575.54166666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{A5D846DD-0920-43CC-ADC6-F0493211938F}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{3F3A2C56-692F-4DBE-8A10-9EB9DD03FBF7}" ShortID="804973795">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{5A228C69-878F-4CC2-BCB1-20F413837887}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="231552879"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{7A6B48FF-69FA-4A69-8093-DD8DC9BC437F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{9382465A-7E50-4735-A2F7-7BEB8E38175A}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{95806511-422A-4471-9BE8-E8490F7C02D6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="16290.96875"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{5A228C69-878F-4CC2-BCB1-20F413837887}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{6490C90F-1CF4-4BF1-8E51-5AD8C14CC071}" ShortID="173963550">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{5A9BC86B-9B03-4DF9-904B-304CAED84280}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="702400192"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{2715A030-DB31-47B4-A307-70736CF29373}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{7E40AC1C-3934-4EB5-B368-117EAB8CC52E}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{F51E988F-F351-4AF5-AB3B-2103BAA1CF79}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="13444.3645833333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{5A9BC86B-9B03-4DF9-904B-304CAED84280}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{070F6292-E906-4098-A985-A2422E900A5E}" ShortID="139398411">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{080CB55C-6C23-4F90-A03A-E83216A96C80}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="268325990"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{71F9E95C-67B4-4E78-95F7-59AE2344E62F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{4595DA50-A3BC-45C0-B9A9-D03A1CADBB89}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{49252436-F7FD-4912-939D-D44E8B86043C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17856.3854166667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{080CB55C-6C23-4F90-A03A-E83216A96C80}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{EB54D690-19D8-4B26-A35C-E8E811B54D5B}" ShortID="202588272">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{6F716102-02E3-47B3-9F8B-D500B194D4CF}">
+									<Language>SFX</Language>
+									<AudioFile>Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1034891789"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{F85B6ED6-6697-4EE3-9E01-431D954F665D}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{82CA11DF-819C-4C02-9692-AC1BBF645E0E}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{4DA1C796-4120-44D7-9130-EA5BEF7275E9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8665.13541666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{6F716102-02E3-47B3-9F8B-D500B194D4CF}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{C101B148-805C-4410-979C-B8D1452A7992}" ShortID="769727451">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{48522621-7307-4C0E-ADCC-609DAF6B10EF}">
+									<Language>SFX</Language>
+									<AudioFile>Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="355837447"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{03B03EDB-0958-4F04-8B6E-32BE2F164EED}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{F1DDF787-564A-48B0-9AC5-E403CF6DBF10}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{0C513D75-19A8-45E3-87D3-FDCE3A3AACE3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="18307.3958333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{48522621-7307-4C0E-ADCC-609DAF6B10EF}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{F48D39AE-786E-45E2-BD4A-0FDF3BCDD3BD}" ShortID="172794410">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{D87E4DFB-8AC8-4C2A-9AE5-E6C78A24E67E}">
+									<Language>SFX</Language>
+									<AudioFile>Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="112604766"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{C88748B8-C441-4104-97F1-F900506BE82D}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{98E2690D-4D06-4EFB-8087-2D4398999DD2}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{A7099E9A-1730-44CC-ABFB-4FF8C114021B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="21610.1458333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{D87E4DFB-8AC8-4C2A-9AE5-E6C78A24E67E}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{F99F56DD-8893-4F29-877C-BE745EB4390C}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{CC32BA30-2995-4965-A2DA-52E3F49722F6}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicPlaylistContainer Name="Ambience" ID="{A5420B53-71AD-49ED-834B-F2E22E922318}" ShortID="60907543">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-33</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="New Music Segment" ID="{C0AFB508-5F94-4BFA-B829-EDF9FBB7C313}" ShortID="289097632">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="56819.5362510082"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668" ID="{2ED23F87-6412-4CC3-B217-02AD5E828B8A}" ShortID="148248074">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668" ID="{36DA56E2-B50B-43D1-AE02-808CF161B5A8}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="200978758"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1AD7BFCB-03E9-4098-99E7-125F65F7B32C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{478AFAEE-B307-4050-A33E-6B69E37F4C72}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668" ID="{96B3441C-CCDF-4EE7-B069-E3FFEEA15528}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="53595.0104166667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668" ID="{36DA56E2-B50B-43D1-AE02-808CF161B5A8}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Ambience, Industrial, Factory, High Ventilation, Birds SND49125" ID="{BE29BE84-8BAD-496F-A9F7-FAD1A0CD992D}" ShortID="933233684">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Industrial, Factory, High Ventilation, Birds SND49125" ID="{6990D0C6-0B81-47DB-A5D1-2BDA30E7418F}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Industrial, Factory, High Ventilation, Birds SND49125.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="889441978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4742C838-C386-4606-BAC3-744159479E76}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5606A13B-422B-41EB-A2B0-6EF074640DEF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Ambience, Industrial, Factory, High Ventilation, Birds SND49125" ID="{37DBF425-4C92-4331-A78E-F9CD2F75F3B9}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="36644.7291666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Ambience, Industrial, Factory, High Ventilation, Birds SND49125" ID="{6990D0C6-0B81-47DB-A5D1-2BDA30E7418F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{11B03F45-D190-4318-9193-1E4CCA2C44A6}" ShortID="329270993">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{5D91DF4B-2810-4633-A3F2-46E6680CAEF4}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1004075144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{795B5613-39A4-4214-99C0-AD4B5ADFEF3D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1EFCA033-1296-4879-8F7F-771953D73316}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{40AE323E-99CB-43C5-80A9-D71D53746789}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="-6979.5177167592"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="49294.7437126272"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="7006.78145784029"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{5D91DF4B-2810-4633-A3F2-46E6680CAEF4}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{123A46C1-7965-412B-BC87-4208217AE4E3}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-6.97952</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>49.29474</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{FBD24827-3DB4-49B9-8A29-C4237AAF1D0A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-6.97952</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>49.29474</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{2C774060-CDAD-435D-9552-F94351FE91BA}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-6.97952</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>49.29474</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{B7FEBAA0-4FE0-4F6E-8709-E04B8F6C2A73}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1145.07712540581"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{D3FE6280-A041-43C3-9363-41994AAE6333}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="29702.2517900003"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{A3C117BA-DB17-4503-8136-62DEE4ECFE83}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{12F074CA-6B94-4DEC-9F20-35122C875F30}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{0A0045CE-83B0-4C62-8BF6-2678550E9C1A}" ShortID="75289577">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{14B15F66-209A-471D-BD8D-847F6412255B}" ShortID="9036580">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="New Music Segment" ID="{C0AFB508-5F94-4BFA-B829-EDF9FBB7C313}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

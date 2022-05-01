@@ -30,6 +30,7 @@ public class Brick : MonoBehaviour
     private float emitForce;
     private float emitLastPulseTime;
     private float jointAttachmentTime;
+    private bool ignoreShake;
 
     void Start()
     {
@@ -38,7 +39,6 @@ public class Brick : MonoBehaviour
         ChildBricks = new List<Brick>();
 
         Material mat = GetComponent<MeshRenderer>().material;
-      //  mat.color = new Color(Random.value, Random.value, Random.value);
         
           if (RandomColour == 1) { mat.color = new Color(217f / 255f, 217f / 255f, 214f / 255f); } //white
           if (RandomColour == 2) { mat.color = new Color(225f / 255f, 205f / 255f, 000f / 255f); } //yellow 
@@ -101,8 +101,8 @@ public class Brick : MonoBehaviour
         {
             joint.breakForce = breakForce;
             joint.breakTorque = breakTorque;
+            ignoreShake = false;
         }
-        if (Input.GetKeyDown(KeyCode.I)) Time.timeScale = 1;
     }
 
     public bool TryGetPlayerFromChain(out Player player)
@@ -267,7 +267,6 @@ public class Brick : MonoBehaviour
             diff.y = (Mathf.Abs(ownOffset.y) + Mathf.Abs(otherOffset.y)) * (ownAttachment.IsSocket ? 1 : -1);
 
             transform.Translate(diff);
-            Time.timeScale = 0.05f;
 
             if (!aligned)
             {
@@ -283,6 +282,7 @@ public class Brick : MonoBehaviour
             joint.connectedAnchor = otherAttachment.Position;
             joint.connectedBody = to.GetComponent<Rigidbody>();
             jointAttachmentTime = Time.time;
+            ignoreShake = true;
 
             to.ChildBricks.Add(this);
             if (to.IsChainedToPlayer)
