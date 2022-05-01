@@ -20,17 +20,17 @@ public class Spawner : MonoBehaviour
         var min = collider.bounds.min;
         var max = collider.bounds.max;
 
-        var gameObj = gameObjects[Random.Range(0, gameObjects.Count - 1)];
-        if (gameObj)
+        if (gameObjects.Count > 0)
         {
             for (int i = 0; i < amount; i++)
             {
+                var gameObj = gameObjects[Random.Range(0, gameObjects.Count - 1)];
                 Vector3 spawnPoint = collider.ClosestPoint(new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), Random.Range(min.z, max.z)));
                 GameObject instance = Instantiate(gameObj);
                 instance.transform.position = spawnPoint;
             }
         }
-
+        
         StartCoroutine(KeepSpawning());
     }
 
@@ -48,14 +48,17 @@ public class Spawner : MonoBehaviour
 
             if (_frequencyTimer <= 0)
             {
-                for (var i = 0; i < spawnAmount; i++)
+                if (gameObjects.Count > 0)
                 {
-                    var gameObj = gameObjects[Random.Range(0, gameObjects.Count - 1)];
-                    Vector3 spawnPoint = collider.ClosestPoint(new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), Random.Range(min.z, max.z)));
-                    GameObject instance = Instantiate(gameObj);
-                    instance.transform.position = spawnPoint;
+                    for (var i = 0; i < spawnAmount; i++)
+                    {
+                        var gameObj = gameObjects[Random.Range(0, gameObjects.Count - 1)];
+                        Vector3 spawnPoint = collider.ClosestPoint(new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), Random.Range(min.z, max.z)));
+                        GameObject instance = Instantiate(gameObj);
+                        instance.transform.position = spawnPoint;
+                    }
                 }
-
+                
                 _frequencyTimer = spawnFrequency;
             }
             
