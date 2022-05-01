@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b888ea2c0e8b51488976c9892fd74cbf
     GuidInternal: 
-    m_lastTime: -8585502072109739114
+    m_lastTime: -8585502028949293314
     List:
     - name: Main
       guid: 04abc5792752054fbf779617e3c172e1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0eccda7c926304790f8d25e75c3549a
     GuidInternal: 
-    m_lastTime: -8585502072109559594
+    m_lastTime: -8585502025889646450
     List:
+    - name: Play_Ambience
+      guid: b9380b091846b647bce8942fa92a217b
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0eccda7c926304790f8d25e75c3549a
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: b9380b091846b647bce8942fa92a217b
+      Path: Events\Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_BrickWall
       guid: f78e185a3c0ee243a10c63acc44cfd4e
       id: 3952659097
