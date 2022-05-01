@@ -131,7 +131,8 @@ public class Brick : MonoBehaviour
     {
         if (!setup || IsPlayer) return;
 
-        if (collision.gameObject.CompareTag("Brick") && collision.impulse.magnitude > 3 && GameManager.Instance.GameState.Equals(GameStates.Running))
+        var brickComponent = collision.gameObject.GetComponent<Brick>();
+        if (collision.gameObject.CompareTag("Brick") && brickComponent.IsChainedToPlayer && GameManager.Instance.GameState.Equals(GameStates.Running))
         {
             CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
         }
