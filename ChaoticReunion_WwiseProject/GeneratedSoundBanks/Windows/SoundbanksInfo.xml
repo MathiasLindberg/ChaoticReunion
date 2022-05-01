@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3134121095">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2833617156">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -27,6 +27,10 @@
 							<ShortName>Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668.wav</ShortName>
 							<Path>SFX\Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668_9EDFC787.wem</Path>
 						</File>
+						<File Id="503518443" Language="SFX">
+							<ShortName>Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672.wav</ShortName>
+							<Path>SFX\Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672_9EDFC787.wem</Path>
+						</File>
 						<File Id="889441978" Language="SFX">
 							<ShortName>Ambience, Industrial, Factory, High Ventilation, Birds SND49125.wav</ShortName>
 							<Path>SFX\Ambience, Industrial, Factory, High Ventilation, Birds SND49125_9EDFC787.wem</Path>
@@ -34,6 +38,10 @@
 						<File Id="1004075144" Language="SFX">
 							<ShortName>Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182.wav</ShortName>
 							<Path>SFX\Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182_9EDFC787.wem</Path>
+						</File>
+						<File Id="1064288215" Language="SFX">
+							<ShortName>Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679.wav</ShortName>
+							<Path>SFX\Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

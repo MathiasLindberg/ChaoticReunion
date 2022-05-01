@@ -1161,7 +1161,12 @@
 					<ChildrenList>
 						<MusicSegment Name="New Music Segment" ID="{C0AFB508-5F94-4BFA-B829-EDF9FBB7C313}" ShortID="289097632">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="56819.5362510082"/>
+								<Property Name="EndPosition" Type="Real64" Value="105956.427083333"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1382,6 +1387,106 @@
 																					</Curve>
 																				</PropertyCurve>
 																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679" ID="{E0BF1C0C-3272-45CA-B54D-5EE23B155E30}" ShortID="787600529">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679" ID="{60579AE0-8193-4CF2-8745-2DC3EA47B3B2}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1064288215"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{80592611-2F24-4F5D-94A8-089C59EF72FE}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3A3E0A26-3B2A-406A-887C-37209D79C9EF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679" ID="{9541F266-0244-46F5-B007-17209E8571B7}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="53510.6770833333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679" ID="{60579AE0-8193-4CF2-8745-2DC3EA47B3B2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672" ID="{B3709965-51BA-41B0-B2C2-205C5AE946CD}" ShortID="429338300">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672" ID="{879F2686-65EB-4801-8757-D9B1B75E334F}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="503518443"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E1DB880A-D255-4F20-B283-162A4AB73CD6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5D37EE79-9472-4576-9983-3295649A8209}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672" ID="{9ECEF4B5-4FFC-41DB-8685-0FDE99565E53}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="105956.427083333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672" ID="{879F2686-65EB-4801-8757-D9B1B75E334F}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
