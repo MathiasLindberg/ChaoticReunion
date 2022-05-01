@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5272235195270664277}
   - component: {fileID: 5272235195270664278}
   - component: {fileID: 5272235195270664279}
-  m_Layer: 0
+  - component: {fileID: 6138491560777264347}
+  m_Layer: 14
   m_Name: Brick 7
   m_TagString: Brick
   m_Icon: {fileID: 0}
@@ -111,10 +112,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693f8b5f9b885f3478e79e2e52266dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakForce: 150
-  breakTorque: 40
-  width: 2
-  height: 2
+  breakForce: 1200
+  breakTorque: 320
+  width: 1
+  height: 1
+  shootableLayer:
+    serializedVersion: 2
+    m_Bits: 16384
 --- !u!54 &5272235195270664279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,6 +135,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6138491560777264347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272235195270664265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ec2af0d3cbaf34ea2b5f88c4aabdac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinimumSpeed: 2
+  soundEffectEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c55b3e195d17bdf48854ce09150c3007,
+      type: 2}
 --- !u!1001 &794757231441284571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138,10 +160,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5272235195270664274}
     m_Modifications:
+    - target: {fileID: 2467670190613043951, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635679614324861108, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342352747405701612, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962863127082147841, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000288598299162692, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5680817893131818481, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
         type: 3}
       propertyPath: m_Name
       value: Piece09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680817893131818481, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298994093827378571, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7178768384648365264, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
         type: 3}
@@ -197,6 +254,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151740004528781026, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183335651279687691, guid: 9b5191076aa4deb4eb07f8074cf4a8f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b5191076aa4deb4eb07f8074cf4a8f5, type: 3}

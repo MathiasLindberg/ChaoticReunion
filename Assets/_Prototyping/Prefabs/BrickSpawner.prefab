@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4580457096097961234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4580457096097961237}
+  - component: {fileID: 4580457096097961236}
+  - component: {fileID: 4580457096097961235}
+  m_Layer: 0
+  m_Name: BrickSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4580457096097961237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580457096097961234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4580457096097961236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580457096097961234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a699b047aa72e40a8dce883680ba4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 5272235195270664265, guid: 35a3675bdf3084f4c9e9dc793dc77f3a, type: 3}
+  - {fileID: 5272235195270664265, guid: bccdab75bb46ba1419ad6058448cabdf, type: 3}
+  - {fileID: 5272235195270664265, guid: 43ed3beb45f03904599200cb8ee7b8c9, type: 3}
+  - {fileID: 5272235195270664265, guid: 5e4f1343c67845e48bb368103f3d5be5, type: 3}
+  - {fileID: 5272235195270664265, guid: dd56a582acb3e4b4d8812c36933428bd, type: 3}
+  - {fileID: 5272235195270664265, guid: 12e1a525e593d474c9cc5d8fa3d307fd, type: 3}
+  - {fileID: 5272235195270664265, guid: d6c676bbafa83ba4cb517810702d0ffe, type: 3}
+  amount: 10
+  spawnFrequency: 5
+  spawnAmount: 5
+--- !u!135 &4580457096097961235
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580457096097961234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 0, z: 0}

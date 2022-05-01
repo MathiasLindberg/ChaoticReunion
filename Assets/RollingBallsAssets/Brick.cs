@@ -135,6 +135,7 @@ public class Brick : MonoBehaviour
         if (collision.gameObject.CompareTag("Brick") && brickComponent.IsChainedToPlayer && GameManager.Instance.GameState.Equals(GameStates.Running))
         {
             CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
+            AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
         }
 
         if (attached && !IsChainedToPlayer && collision.collider.TryGetComponent(out Brick brick) && brick.IsChainedToPlayer)
