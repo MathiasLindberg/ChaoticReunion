@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4129303916">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3248751529">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1512854533">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3904504269">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -70,6 +70,58 @@
 						<File Id="1012451703" Language="SFX">
 							<ShortName>Music - Fluffys Carrot Farm.wav</ShortName>
 							<Path>SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1856429970" Name="Play_Playermovement" ObjectPath="\Events\Default Work Unit\Play_Playermovement" DurationType="OneShot" DurationMin="0.163378" DurationMax="0.567887">
+					<IncludedMemoryFiles>
+						<File Id="134507310" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 6.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 6_D7A4C30D.wem</Path>
+						</File>
+						<File Id="197387765" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 3.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 3_8FF87958.wem</Path>
+						</File>
+						<File Id="207458176" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 3.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 3_0ECE9AE7.wem</Path>
+						</File>
+						<File Id="236429987" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 1.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 1_46A12240.wem</Path>
+						</File>
+						<File Id="297887456" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 1.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 1_1FF25F4A.wem</Path>
+						</File>
+						<File Id="300677189" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N_231F756D.wem</Path>
+						</File>
+						<File Id="400217825" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 5.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 5_95F1791E.wem</Path>
+						</File>
+						<File Id="464199206" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 4.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 4_371DAB06.wem</Path>
+						</File>
+						<File Id="671455629" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 4.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 4_E73378E6.wem</Path>
+						</File>
+						<File Id="743604181" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 2.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965 2_6162B2E2.wem</Path>
+						</File>
+						<File Id="953982825" Language="SFX">
+							<ShortName>Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965.wav</ShortName>
+							<Path>SFX\Plastic, Impact, Thin, Sheet Under Tension, Knock, Impact 02 SND18965_2DB4C818.wem</Path>
+						</File>
+						<File Id="983943605" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 2.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 2_9BAE3FF1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
