@@ -132,9 +132,21 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameFinishing()
     {
         GameState = GameStates.Finishing;
-
+        
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
 
+        foreach (var player in players)
+        {
+            if (player.IsAlive)
+            {
+                var playerMatName = player.GetComponent<MeshRenderer>().material.name;
+                var indexOfSpace = playerMatName.IndexOf(' ');
+                playerMatName = playerMatName.Substring(0, indexOfSpace);
+                ((GameFinishingView)UIViewManager.Instance.CurrentUIView).textElement.text = playerMatName.ToLower() + " player won!";
+                break;
+            } 
+        }
+        
         foreach (var player in players)
             player.CanMove = false;
 
