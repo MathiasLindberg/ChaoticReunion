@@ -730,6 +730,9 @@
 						<RandomSequenceContainer Name="LegoImpacts" ID="{B7089040-AEA4-45A7-AEA6-75C619EFF517}" ShortID="148844513">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-300</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{B2A64A0D-45AF-4AE9-A894-014648CFEF3A}">
@@ -741,6 +744,32 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{E408B4D9-B020-45C0-B8DC-A3BFE6188410}" ShortID="4400274">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_Brickspeed" ID="{8A855385-4E1E-4CD8-9F45-1840F5A71D8B}" WorkUnitID="{21D31D2B-C713-43BB-8CEA-AC97340F9A4B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2229C0F1-32EE-4BD0-807F-2D4D7B6D5F3A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>998</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -752,245 +781,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Aalborg Universitet - København 3N" ID="{068FA6DD-C253-406C-9399-D5CFA12B3C79}" ShortID="536822021">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{9EB8774E-3E1D-42C0-BE9B-23DAC302B79F}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 3N.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="427190654"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 3N 1" ID="{7E4642DB-2EAE-444C-A3D3-AD8665E4D5A8}" ShortID="155727903">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 3N 1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="789351009"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 3N 2" ID="{747964F2-4B45-438E-BF2F-E25CE6D0492C}" ShortID="95513420">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 3N 2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="130566448"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 3N 3" ID="{7D543654-2833-48DB-95D3-2EB990EA98AB}" ShortID="94848862">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 3N 3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="898041392"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 4N" ID="{1525594C-8CB5-4314-AACB-8DC95C7ED043}" ShortID="893562555">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 4N.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="300677189"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 4N 1" ID="{B6F5A6B5-0C61-4896-90F0-B598D425FA88}" ShortID="296847763">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 4N 1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="236429987"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 4N 2" ID="{4CAE372D-99AE-406D-960C-7A86DA762358}" ShortID="1035152441">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 4N 2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="983943605"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 4N 3" ID="{21C46F94-0E18-48A7-A181-1AC11BA8208A}" ShortID="293225950">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 4N 3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="197387765"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - København 4N 4" ID="{65643972-7D4F-42C9-9422-6CE393A3F6FB}" ShortID="198150032">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - København 4N 4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="671455629"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Aalborg Universitet - KøbenhavnN" ID="{3EE32E89-7E61-462D-9EC7-CD19EC060839}" ShortID="845342488">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}">
-											<Language>SFX</Language>
-											<AudioFile>LegoTable\Aalborg Universitet - KøbenhavnN.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="657882075"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{AEAD68FD-93D8-444E-AD27-C14F600BF07E}" ShortID="539577566">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1002,6 +792,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{A700628E-0DDB-459E-9968-28C3B9012DF1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00797104322139303"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0378624553016169"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0387164956467662"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.184472714552239"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</AudioFile>
 											<MediaIDList>
@@ -1025,6 +822,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{6B0D8A9A-EF80-4AA9-BB16-28A6BA1E6790}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0174498017723881"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0535958197294776"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0282520600124378"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.269225513059702"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</AudioFile>
 											<MediaIDList>
@@ -1048,6 +852,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{3B6A746C-93FA-469B-B4F7-46FE70F39CE0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00473938899253731"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0230506646455224"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0743222364738806"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.167386602145522"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</AudioFile>
 											<MediaIDList>
@@ -1071,6 +882,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{3438D9E2-D57E-41C7-A320-2E58D750A318}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.015233937733209"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0561963036380597"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0267440240205224"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.19871825443097"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</AudioFile>
 											<MediaIDList>
@@ -1094,6 +912,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{F51FB20E-9E27-42C9-9806-982A59413AAF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0135027985074627"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0513106343283582"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0342070895522388"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.184838308457711"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</AudioFile>
 											<MediaIDList>
@@ -1117,6 +942,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{044ACA8C-1F2F-4F40-8639-C79B69A45957}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0162879547574627"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0417239388992537"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0118255013992537"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.225800139925373"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</AudioFile>
 											<MediaIDList>
@@ -1140,6 +972,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{F961F4C3-8740-4932-B6B3-65334868680B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0502870024875622"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0602274564676617"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0122793843283582"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.288565531716418"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</AudioFile>
 											<MediaIDList>
@@ -1354,7 +1193,249 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="LegoTable" ID="{563BCA19-1EED-4F38-85BF-0F7B085E5C99}" ShortID="102333139"/>
+				<Folder Name="LegoTable" ID="{563BCA19-1EED-4F38-85BF-0F7B085E5C99}" ShortID="102333139">
+					<ChildrenList>
+						<Sound Name="Aalborg Universitet - København 4N 2" ID="{4CAE372D-99AE-406D-960C-7A86DA762358}" ShortID="1035152441">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 4N 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="983943605"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 3N 3" ID="{7D543654-2833-48DB-95D3-2EB990EA98AB}" ShortID="94848862">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 3N 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="898041392"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 3N 1" ID="{7E4642DB-2EAE-444C-A3D3-AD8665E4D5A8}" ShortID="155727903">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 3N 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="789351009"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 4N 4" ID="{65643972-7D4F-42C9-9422-6CE393A3F6FB}" ShortID="198150032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 4N 4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="671455629"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 4N 1" ID="{B6F5A6B5-0C61-4896-90F0-B598D425FA88}" ShortID="296847763">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 4N 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="236429987"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 4N" ID="{1525594C-8CB5-4314-AACB-8DC95C7ED043}" ShortID="893562555">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 4N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="300677189"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 3N" ID="{068FA6DD-C253-406C-9399-D5CFA12B3C79}" ShortID="536822021">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9EB8774E-3E1D-42C0-BE9B-23DAC302B79F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 3N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="427190654"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - KøbenhavnN" ID="{3EE32E89-7E61-462D-9EC7-CD19EC060839}" ShortID="845342488">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - KøbenhavnN.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="657882075"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 3N 2" ID="{747964F2-4B45-438E-BF2F-E25CE6D0492C}" ShortID="95513420">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 3N 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="130566448"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aalborg Universitet - København 4N 3" ID="{21C46F94-0E18-48A7-A181-1AC11BA8208A}" ShortID="293225950">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}">
+									<Language>SFX</Language>
+									<AudioFile>LegoTable\Aalborg Universitet - København 4N 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="197387765"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="LegoWaterfall" ID="{1DA30DD5-2521-4D1C-8A67-28499B927DA6}" ShortID="229180830">
 					<ChildrenList>
 						<Sound Name="Toys, Misc, Lego, Pile, Movement SND29534 1N" ID="{9D0B2097-2A9C-4BBE-9662-7CAA2E840345}" ShortID="39132009">
@@ -1555,6 +1636,11 @@
 									<Modifier Name="" ID="{44B17E97-BBFE-4756-A347-B209BE2E795F}"/>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-19</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>

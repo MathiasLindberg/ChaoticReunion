@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{21D31D2B-C713-43BB-8CEA-AC97340F9A4B}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{21D31D2B-C713-43BB-8CEA-AC97340F9A4B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{21D31D2B-C713-43BB-8CEA-AC97340F9A4B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_Brickspeed" ID="{8A855385-4E1E-4CD8-9F45-1840F5A71D8B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
