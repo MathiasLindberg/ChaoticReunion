@@ -16,11 +16,63 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3904504269">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1255782891">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3952659097" Name="Play_BrickWall" ObjectPath="\Events\Default Work Unit\Play_BrickWall" DurationType="OneShot" DurationMin="0.233591" DurationMax="0.699771">
+					<IncludedMemoryFiles>
+						<File Id="76456941" Language="SFX">
+							<ShortName>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4.wav</ShortName>
+							<Path>SFX\Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="123176262" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N_B8BC4F2F.wem</Path>
+						</File>
+						<File Id="148390160" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N_DB908EA0.wem</Path>
+						</File>
+						<File Id="359358972" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N_D4602527.wem</Path>
+						</File>
+						<File Id="464091641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N_7EC97F7B.wem</Path>
+						</File>
+						<File Id="658218352" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N_FBFC306C.wem</Path>
+						</File>
+						<File Id="660968054" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N_E6EDB3CB.wem</Path>
+						</File>
+						<File Id="667574172" Language="SFX">
+							<ShortName>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3.wav</ShortName>
+							<Path>SFX\Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="722944686" Language="SFX">
+							<ShortName>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2.wav</ShortName>
+							<Path>SFX\Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="735835899" Language="SFX">
+							<ShortName>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542.wav</ShortName>
+							<Path>SFX\Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542_3F75BDB9.wem</Path>
+						</File>
+						<File Id="846769641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N_B27FBB45.wem</Path>
+						</File>
+						<File Id="1032032931" Language="SFX">
+							<ShortName>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1.wav</ShortName>
+							<Path>SFX\Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="108991751" Name="Play_Camerashake" ObjectPath="\Events\Default Work Unit\Play_Camerashake" DurationType="OneShot" DurationMin="1.770547" DurationMax="2.336251">
 					<IncludedMemoryFiles>
 						<File Id="352236991" Language="SFX">
@@ -65,11 +117,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2860779826" Name="Play_Music___Fluffys_Carrot_Farm" ObjectPath="\Events\Default Work Unit\Play_Music___Fluffys_Carrot_Farm" DurationType="OneShot" DurationMin="30.857166" DurationMax="30.857166">
+				<Event Id="347460461" Name="Play_LegoShot" ObjectPath="\Events\Default Work Unit\Play_LegoShot" DurationType="OneShot" DurationMin="0.589672" DurationMax="0.992793">
+					<IncludedMemoryFiles>
+						<File Id="123176262" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N_B8BC4F2F.wem</Path>
+						</File>
+						<File Id="148390160" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N_DB908EA0.wem</Path>
+						</File>
+						<File Id="359358972" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N_D4602527.wem</Path>
+						</File>
+						<File Id="383353561" Language="SFX">
+							<ShortName>Guns, Cannon, Multiple Shots, Dull SND6327.wav</ShortName>
+							<Path>SFX\Guns, Cannon, Multiple Shots, Dull SND6327_3F75BDB9.wem</Path>
+						</File>
+						<File Id="464091641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N_7EC97F7B.wem</Path>
+						</File>
+						<File Id="485588951" Language="SFX">
+							<ShortName>Guns, Cannon, Multiple Shots, Dull SND6327 1.wav</ShortName>
+							<Path>SFX\Guns, Cannon, Multiple Shots, Dull SND6327 1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="591894615" Language="SFX">
+							<ShortName>Guns, Cannon, Multiple Shots, Dull SND6327 2.wav</ShortName>
+							<Path>SFX\Guns, Cannon, Multiple Shots, Dull SND6327 2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="658218352" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N_FBFC306C.wem</Path>
+						</File>
+						<File Id="660968054" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N_E6EDB3CB.wem</Path>
+						</File>
+						<File Id="846769641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N_B27FBB45.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2860779826" Name="Play_Music___Fluffys_Carrot_Farm" ObjectPath="\Events\Default Work Unit\Play_Music___Fluffys_Carrot_Farm" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1012451703" Language="SFX">
 							<ShortName>Music - Fluffys Carrot Farm.wav</ShortName>
-							<Path>SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem</Path>
+							<Path>SFX\Music - Fluffys Carrot Farm_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
