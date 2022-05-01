@@ -222,9 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a699b047aa72e40a8dce883680ba4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 5272235195270664265, guid: 98daf531433d1c643b86674149298d16,
-    type: 3}
+  gameObjects: []
   amount: 100
+  spawnFrequency: 0
+  spawnAmount: 0
 --- !u!4 &522211317
 Transform:
   m_ObjectHideFlags: 0
@@ -625,9 +626,8 @@ GameObject:
   - component: {fileID: 956882564}
   - component: {fileID: 956882563}
   - component: {fileID: 956882566}
-  - component: {fileID: 956882562}
   - component: {fileID: 956882561}
-  - component: {fileID: 956882565}
+  - component: {fileID: 956882567}
   m_Layer: 0
   m_Name: MusicController
   m_TagString: Untagged
@@ -651,36 +651,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &956882562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956882560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48b37a4b8c778d74ca615db73dc742a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0f88d95a057f3064ca1b124f37784aa0,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &956882563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +688,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &956882565
+--- !u!114 &956882566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956882560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc993e5ec1e6536408d33da3e974bb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 381b42266d440d64aa5d3b640aede897,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &956882567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -738,7 +733,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 12a5a321a0cfdee42b92ee61dd9a17de,
+    WwiseObjectReference: {fileID: 11400000, guid: 28844dd82b3f9364eaf943689b40ebbc,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -748,31 +743,6 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!114 &956882566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956882560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc993e5ec1e6536408d33da3e974bb83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: debfa5e8cf0a46442bd9a5e3f5178247,
-      type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,9 +1624,16 @@ MonoBehaviour:
   backKey: 274
   leftKey: 276
   rightKey: 275
+  shootKey: 306
   rollForce: 3
   movementForce: 2
+  sensorRollForce: 2
+  sensorMovementForce: 2
   accelerationSensor: {fileID: 909968401}
+  arrow: {fileID: 0}
+  playfieldLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &1781507525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1979,6 +1956,13 @@ MonoBehaviour:
   backKey: 115
   leftKey: 97
   rightKey: 100
+  shootKey: 306
   rollForce: 3
   movementForce: 2
+  sensorRollForce: 2
+  sensorMovementForce: 2
   accelerationSensor: {fileID: 1760721177}
+  arrow: {fileID: 0}
+  playfieldLayerMask:
+    serializedVersion: 2
+    m_Bits: 0

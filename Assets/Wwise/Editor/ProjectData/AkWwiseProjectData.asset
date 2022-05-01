@@ -20,11 +20,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 9273afcfbd34f544afece704d59b5850
+      guid: ab14793e5fb99e4baf7e7d847315f4c3
     ParentPath: Virtual Acoustics\Default Work Unit
-    guid: 9273afcfbd34f544afece704d59b5850
+    guid: ab14793e5fb99e4baf7e7d847315f4c3
     GuidInternal: 
-    m_lastTime: -8585503470441415218
+    m_lastTime: -8585502170723291900
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -34,11 +34,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: d3065d04aaa9d74caf389373021bdcc4
+      guid: 6ec980ccc51a264093f3d920e0ea5380
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
-    guid: d3065d04aaa9d74caf389373021bdcc4
+    guid: 6ec980ccc51a264093f3d920e0ea5380
     GuidInternal: 
-    m_lastTime: -8585503470442307180
+    m_lastTime: -8585502170723937965
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: d3065d04aaa9d74caf389373021bdcc4
+        guid: 6ec980ccc51a264093f3d920e0ea5380
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -62,14 +62,14 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 1d0466b412a7534d9f1365e532f49d7e
+      guid: b888ea2c0e8b51488976c9892fd74cbf
     ParentPath: SoundBanks\Default Work Unit
-    guid: 1d0466b412a7534d9f1365e532f49d7e
+    guid: b888ea2c0e8b51488976c9892fd74cbf
     GuidInternal: 
-    m_lastTime: -8585502814526951835
+    m_lastTime: -8585502163970508058
     List:
     - name: Main
-      guid: 34b103835a9bdf4793c2564e497ec2f5
+      guid: 04abc5792752054fbf779617e3c172e1
       id: 3161908922
       PathAndIcons:
       - ElementName: SoundBanks
@@ -77,10 +77,10 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 1d0466b412a7534d9f1365e532f49d7e
+        guid: b888ea2c0e8b51488976c9892fd74cbf
       - ElementName: Main
         ObjectType: 7
-        guid: 34b103835a9bdf4793c2564e497ec2f5
+        guid: 04abc5792752054fbf779617e3c172e1
       Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -90,114 +90,46 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 959103d83ace0a448b5f308561410089
+      guid: a0eccda7c926304790f8d25e75c3549a
     ParentPath: Events\Default Work Unit
-    guid: 959103d83ace0a448b5f308561410089
+    guid: a0eccda7c926304790f8d25e75c3549a
     GuidInternal: 
-    m_lastTime: -8585502814526462895
+    m_lastTime: -8585502163970348479
     List:
-    - name: Play_AnnoyingGameMusic
-      guid: 65bff04b9650644eb995fed37484e54f
-      id: 2721505640
+    - name: Play_LegoImpacts
+      guid: ea59253ab07f724eba8dcde66003e95d
+      id: 2482245838
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Play_AnnoyingGameMusic
+        guid: a0eccda7c926304790f8d25e75c3549a
+      - ElementName: Play_LegoImpacts
         ObjectType: 3
-        guid: 65bff04b9650644eb995fed37484e54f
-      Path: Events\Default Work Unit\Play_AnnoyingGameMusic
+        guid: ea59253ab07f724eba8dcde66003e95d
+      Path: Events\Default Work Unit\Play_LegoImpacts
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_FactoryAmbience
-      guid: 82b96fff66af954f9992be4d477fae68
-      id: 4037641288
+      maxDuration: 1.198291
+      minDuration: 0.144209
+    - name: Play_Music___Fluffys_Carrot_Farm
+      guid: 8f3b6a1325a3484896749ff24073d6a8
+      id: 2860779826
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Play_FactoryAmbience
+        guid: a0eccda7c926304790f8d25e75c3549a
+      - ElementName: Play_Music___Fluffys_Carrot_Farm
         ObjectType: 3
-        guid: 82b96fff66af954f9992be4d477fae68
-      Path: Events\Default Work Unit\Play_FactoryAmbience
+        guid: 8f3b6a1325a3484896749ff24073d6a8
+      Path: Events\Default Work Unit\Play_Music___Fluffys_Carrot_Farm
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_LegoConnect
-      guid: 27e8f76ec0184e409095b27724375d80
-      id: 437071513
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Play_LegoConnect
-        ObjectType: 3
-        guid: 27e8f76ec0184e409095b27724375d80
-      Path: Events\Default Work Unit\Play_LegoConnect
-      maxAttenuation: 0
-      maxDuration: 0.288229
-      minDuration: 0.020387
-    - name: Play_LegoNoises
-      guid: f7a27c43e1013a498c43668cab2217fa
-      id: 2910028272
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Play_LegoNoises
-        ObjectType: 3
-        guid: f7a27c43e1013a498c43668cab2217fa
-      Path: Events\Default Work Unit\Play_LegoNoises
-      maxAttenuation: 0
-      maxDuration: 0.450103
-      minDuration: 0.213791
-    - name: Stop_AnnoyingGameMusic
-      guid: 729b6710841b334b965790f3d5af9358
-      id: 2573728290
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Stop_AnnoyingGameMusic
-        ObjectType: 3
-        guid: 729b6710841b334b965790f3d5af9358
-      Path: Events\Default Work Unit\Stop_AnnoyingGameMusic
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Stop_FactoryAmbience
-      guid: 242a270248d476498c9b7d7c753e71b9
-      id: 322622062
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 959103d83ace0a448b5f308561410089
-      - ElementName: Stop_FactoryAmbience
-        ObjectType: 3
-        guid: 242a270248d476498c9b7d7c753e71b9
-      Path: Events\Default Work Unit\Stop_FactoryAmbience
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 30.857166
+      minDuration: 30.857166
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -206,54 +138,12 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 68b0179ede83c9458bedde6676d71947
+      guid: 2b1dd32113c7bb438ceaac97340f9a4b
     ParentPath: Game Parameters\Default Work Unit
-    guid: 68b0179ede83c9458bedde6676d71947
+    guid: 2b1dd32113c7bb438ceaac97340f9a4b
     GuidInternal: 
-    m_lastTime: -8585502811699776161
-    List:
-    - name: EngineSpeed
-      guid: 2f45c714def84a429c69dbc50c3583eb
-      id: 3350583156
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 68b0179ede83c9458bedde6676d71947
-      - ElementName: EngineSpeed
-        ObjectType: 13
-        guid: 2f45c714def84a429c69dbc50c3583eb
-      Path: Game Parameters\Default Work Unit\EngineSpeed
-    - name: RTPC_BrickNumber
-      guid: ebf0e4a06ab8b749856b9855d0e7cdb5
-      id: 3743445693
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 68b0179ede83c9458bedde6676d71947
-      - ElementName: RTPC_BrickNumber
-        ObjectType: 13
-        guid: ebf0e4a06ab8b749856b9855d0e7cdb5
-      Path: Game Parameters\Default Work Unit\RTPC_BrickNumber
-    - name: RTPC_BrickSpeed
-      guid: 4c0212e6a4811f40b3c8d22495211c92
-      id: 3984738255
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 68b0179ede83c9458bedde6676d71947
-      - ElementName: RTPC_BrickSpeed
-        ObjectType: 13
-        guid: 4c0212e6a4811f40b3c8d22495211c92
-      Path: Game Parameters\Default Work Unit\RTPC_BrickSpeed
+    m_lastTime: -8585502170726100749
+    List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -262,11 +152,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 94e4e26be768684d923c1ec0c5804ee2
+      guid: 18ef83dcdb8851469aaaf4b2607286d8
     ParentPath: States\Default Work Unit
-    guid: 94e4e26be768684d923c1ec0c5804ee2
+    guid: 18ef83dcdb8851469aaaf4b2607286d8
     GuidInternal: 
-    m_lastTime: -8585503470441804192
+    m_lastTime: -8585502170725801542
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -276,11 +166,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 58df2faf733e5d44abc55ddef13ecc44
+      guid: 68c9a50bfa536441861e8dc2157530a7
     ParentPath: Switches\Default Work Unit
-    guid: 58df2faf733e5d44abc55ddef13ecc44
+    guid: 68c9a50bfa536441861e8dc2157530a7
     GuidInternal: 
-    m_lastTime: -8585503470442003656
+    m_lastTime: -8585502170725085930
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -290,14 +180,14 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 68779a520218a24e8c2031ec8d21ff18
+      guid: 3e8cf378ef731b448c8a4edf77e49f29
     ParentPath: Triggers\Default Work Unit
-    guid: 68779a520218a24e8c2031ec8d21ff18
+    guid: 3e8cf378ef731b448c8a4edf77e49f29
     GuidInternal: 
-    m_lastTime: -8585503470441903908
+    m_lastTime: -8585502170723670906
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000f00000010000000
+  ExpandedWaapiItemIds: 0a0000000b0000006100000062000000c8000000c9000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

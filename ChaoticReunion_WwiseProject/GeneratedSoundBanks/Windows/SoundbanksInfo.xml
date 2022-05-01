@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Github\ChaoticReunion\ChaoticReunion\ChaoticReunion_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2733252926">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2482245838" Name="Play_LegoImpacts" ObjectPath="\Events\Default Work Unit\Play_LegoImpacts" DurationType="OneShot" DurationMin="0.144209" DurationMax="1.198291">
+					<IncludedMemoryFiles>
+						<File Id="123176262" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="130566448" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 3N 2.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 3N 2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="148390160" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="197387765" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 3.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="236429987" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 1.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="300677189" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="359358972" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="427190654" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 3N.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 3N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="464091641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="657882075" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - KøbenhavnN.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - KøbenhavnN_3F75BDB9.wem</Path>
+						</File>
+						<File Id="658218352" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="660968054" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="671455629" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 4.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="789351009" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 3N 1.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 3N 1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="846769641" Language="SFX">
+							<ShortName>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</ShortName>
+							<Path>SFX\Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N_3F75BDB9.wem</Path>
+						</File>
+						<File Id="898041392" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 3N 3.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 3N 3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="983943605" Language="SFX">
+							<ShortName>LegoTable\Aalborg Universitet - København 4N 2.wav</ShortName>
+							<Path>SFX\LegoTable\Aalborg Universitet - København 4N 2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2860779826" Name="Play_Music___Fluffys_Carrot_Farm" ObjectPath="\Events\Default Work Unit\Play_Music___Fluffys_Carrot_Farm" DurationType="OneShot" DurationMin="30.857166" DurationMax="30.857166">
+					<IncludedMemoryFiles>
+						<File Id="1012451703" Language="SFX">
+							<ShortName>Music - Fluffys Carrot Farm.wav</ShortName>
+							<Path>SFX\Music - Fluffys Carrot Farm_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

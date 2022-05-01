@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="FactoryAmbience" ID="{B1D95262-FF55-4AEB-B4CC-28199195BAE5}" ShortID="970859809">
+					<ChildrenList>
+						<Folder Name="Steam" ID="{5BA75781-0603-45E6-94A2-172729FA75A0}" ShortID="981964314"/>
+						<Sound Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{228A3951-7776-40CE-8BBB-499BC75A2133}" ShortID="933451482">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{D9ECA345-BA9B-4DAB-8184-D66F09061985}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="837797892"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Designed, Factory, Steam, Heavy, Slow 06  SND59936" ID="{D9ECA345-BA9B-4DAB-8184-D66F09061985}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{D3AE9886-0259-4D62-961A-E87B209F891A}" ShortID="888417704">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{3806B5AB-56E1-47D2-A0B1-FCDC9C67DA08}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="346310169"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182" ID="{3806B5AB-56E1-47D2-A0B1-FCDC9C67DA08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{6717F9D5-D31D-4091-90FF-D7B07B9E69CD}" ShortID="686582671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{C1B8B28F-5A8A-4F86-8FB8-9E2EE43ECFFC}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="573554035"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 1" ID="{C1B8B28F-5A8A-4F86-8FB8-9E2EE43ECFFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{1DF71A50-A064-4E9E-801B-672FF5D2FBF0}" ShortID="248345810">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{97AF581C-2814-49B4-BAAD-C5F7127FB471}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="725458653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 2" ID="{97AF581C-2814-49B4-BAAD-C5F7127FB471}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{E12B8698-31FC-43F2-A793-6A02D401A7A9}" ShortID="1043968149">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{C3C36447-55EB-4126-8AC9-30CEED3129A5}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="873184238"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122 3" ID="{C3C36447-55EB-4126-8AC9-30CEED3129A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{FDBF85EE-78CD-44B5-BA05-C88AD3831E9D}" ShortID="24965272">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{06F9FD20-D5EB-4224-AD0E-F5CC43703009}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory Hum, Light Activity 03 SND49122.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="735585235"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory Hum, Light Activity 03 SND49122" ID="{06F9FD20-D5EB-4224-AD0E-F5CC43703009}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{5D711E28-2D6F-49C5-BD42-DDA986E316F2}" ShortID="658564733">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{E597F85F-A04A-4339-BDB8-4101C477615B}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="283050375"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Industrial, Factory, Machine Room, Sparks, Hum, Steam Release, Distant Squeaks  SND49599" ID="{E597F85F-A04A-4339-BDB8-4101C477615B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{233E3E5C-CD2B-4597-812B-E126683EA3CB}" ShortID="255909087">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{0BA7ED85-EC1E-44C2-A478-E0F30D0D6F33}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="13056907"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 03 SND37401" ID="{0BA7ED85-EC1E-44C2-A478-E0F30D0D6F33}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{9BD4C00A-ABF6-4BEB-8606-72D85BB67C7E}" ShortID="533278901">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{F6825016-E0C2-44FD-8B74-98D734B813D9}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="857381529"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Antique, Steam Engine, Steamer Device, Factory, Rhythmic 04 SND37400" ID="{F6825016-E0C2-44FD-8B74-98D734B813D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{2E9D93BE-204B-4A2B-9283-AA195D76F174}" ShortID="320819687">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{B449A84C-FD70-4493-98F1-522C0B9FC17A}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="342689366"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Appliance, Espresso Machine, Steam Wand Release Pressure Distance SND13313" ID="{B449A84C-FD70-4493-98F1-522C0B9FC17A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{F655C2A4-1A86-4E9F-ACED-5BEC7350E7EB}" ShortID="227818957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{D6280379-3B20-412B-8457-86882EA417DA}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="942298264"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 1" ID="{D6280379-3B20-412B-8457-86882EA417DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{85DE4CF7-1FCA-4373-8AE0-8353126A30E7}" ShortID="377640129">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{B0B2A887-AD25-4F67-88D5-FE861E5DC7DC}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="950862653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275 2" ID="{B0B2A887-AD25-4F67-88D5-FE861E5DC7DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{2432089A-AF5A-4CCF-9DDD-95DE5F3F4417}" ShortID="941329727">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{22E2EDBB-C65A-4A8B-BFCD-4974514F8892}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="325831296"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Air Compressor, Air Pressure, Release, Hatch SND43275" ID="{22E2EDBB-C65A-4A8B-BFCD-4974514F8892}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{6F766C98-FDFA-403E-A07A-4725CDCCF5C6}" ShortID="756091363">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{ED9782C4-7756-4541-ADC7-633A2435C93A}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="338229641"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211 1" ID="{ED9782C4-7756-4541-ADC7-633A2435C93A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{7FEDBCF3-EC82-43EF-B969-62ACAC1B7850}" ShortID="87251375">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{D31B384D-2A0D-4834-A0D1-F77374237B0A}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="74589674"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Factory, Hydraulic Pump, Bagging Machine SND14211" ID="{D31B384D-2A0D-4834-A0D1-F77374237B0A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{EA72A3C6-3AF8-482B-8B25-E644EED7A9BB}" ShortID="813064664">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{6D5F2086-AAE1-4F0F-AAC7-E7A5D16228CC}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="302885371"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Industrial, Lift, Factory Elevator, Rattle, Lifting, Servo SND43260" ID="{6D5F2086-AAE1-4F0F-AAC7-E7A5D16228CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{E83F23CA-9519-4AD1-B6DC-11DAE64CABD9}" ShortID="1046450529">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{0C96391B-7913-4158-A2E6-9BA73BAEEA92}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="608792020"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Hammer, Large SND49689" ID="{0C96391B-7913-4158-A2E6-9BA73BAEEA92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{662ED8C4-40FD-4AEA-96AD-DDDFBC2BB0E5}" ShortID="77307263">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{A313E55D-F4F6-42EC-8862-7ADA1D4A271E}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="229017864"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 01 SND49690" ID="{A313E55D-F4F6-42EC-8862-7ADA1D4A271E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{9586D350-2F55-4A47-9530-92A60CD8BD58}" ShortID="404796450">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{3C38BAF2-92B9-4828-B85E-910DD6C6EA2D}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="394552525"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Pump, Medium 04 SND49693" ID="{3C38BAF2-92B9-4828-B85E-910DD6C6EA2D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{BE9474C7-5CFA-4CF1-950E-F1EC5F1B5F16}" ShortID="75451267">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{7E721935-D762-451C-8D91-603D5EE96474}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="629540405"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Large SND49698" ID="{7E721935-D762-451C-8D91-603D5EE96474}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{54C54393-0390-4C84-AF0C-A99BBCBBBC50}" ShortID="472291861">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{DE9F1798-864E-4188-839B-85F85FE79735}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="750452697"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Machines, Mechanism, Steam Machine, Steampunk, Rhythmic, Engine, Idle, Steam, Medium 01 SND49699" ID="{DE9F1798-864E-4188-839B-85F85FE79735}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{3F5A71F2-9BCC-40D3-A623-1E92B4E37FBA}" ShortID="612902514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{0EC8FB8C-35A7-47F5-A254-ED940023A7E3}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="907997971"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263 1" ID="{0EC8FB8C-35A7-47F5-A254-ED940023A7E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{813E3C18-4C48-49DA-83A1-73EDEDBBA17E}" ShortID="885380546">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{17A48BAB-A4D2-44DE-A352-BA61D3EA690A}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="541686914"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Mechanical, Roller, Conveyor Belt, Chugging, Screws 01 SND43263" ID="{17A48BAB-A4D2-44DE-A352-BA61D3EA690A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Reference" ID="{66D4C933-7681-40C4-81F3-A1590328A0AA}" ShortID="150060292">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Reference" ID="{C40FDB47-FF32-480D-B500-29C8CC7A698B}">
+									<Language>SFX</Language>
+									<AudioFile>FactoryAmbience\Reference.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="479102772"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Reference" ID="{C40FDB47-FF32-480D-B500-29C8CC7A698B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lego Connect" ID="{A6694EB3-5697-4D59-A01B-39A76DC62952}" ShortID="852370223">
+					<ChildrenList>
+						<Sound Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N" ID="{9CD0EE23-A461-4D6C-B4CD-399B9F462DB4}" ShortID="528055173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N" ID="{6932A348-7094-4C21-9B77-37423E46DD92}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="178617293"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 2N" ID="{6932A348-7094-4C21-9B77-37423E46DD92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N" ID="{E71B4E51-5168-4378-9A81-B02AF38CAA91}" ShortID="258899783">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N" ID="{E1969959-D08C-47A9-8E60-EF7F1F6972D8}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="500072480"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 3N" ID="{E1969959-D08C-47A9-8E60-EF7F1F6972D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N" ID="{F51FCEDE-6C76-46B5-9F10-AD3EB9CAAC5C}" ShortID="283557651">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N" ID="{CC26AF33-3794-4655-9CCA-980D843BA22C}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="160227270"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 5N" ID="{CC26AF33-3794-4655-9CCA-980D843BA22C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N" ID="{2449440D-D908-4F11-903E-6A316FBAC510}" ShortID="807717281">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N" ID="{34C1E942-712D-4D8B-BA40-4B8250687765}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="386875123"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053 6N" ID="{34C1E942-712D-4D8B-BA40-4B8250687765}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N" ID="{A3A20831-ABDA-4814-9E1A-01CFB39A24D9}" ShortID="790873330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N" ID="{80B47602-E460-4B8A-8419-0D8EC558C950}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="238789303"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Duplo Bricks, Clipping Together, Removing SND33053N" ID="{80B47602-E460-4B8A-8419-0D8EC558C950}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050 1N" ID="{C4A75B2E-8634-4E9A-9971-044C46752170}" ShortID="738552432">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050 1N" ID="{1673E76D-381A-42F4-9FA2-41496201A127}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050 1N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="630681900"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050 1N" ID="{1673E76D-381A-42F4-9FA2-41496201A127}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050N" ID="{161F87E4-6A83-46A6-9E6D-3E0D7C05E773}" ShortID="499313114">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050N" ID="{D6FABEF2-7D7A-4746-AC84-C36EB9F64738}">
+									<Language>SFX</Language>
+									<AudioFile>Lego Connect\Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="895259535"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Two Pieces, Stuck Together Or Broken Apart SND33050N" ID="{D6FABEF2-7D7A-4746-AC84-C36EB9F64738}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lego Noises" ID="{F1ED6509-6D96-47C2-9A09-16B805DD85F0}" ShortID="515989346">
+					<ChildrenList>
+						<RandomSequenceContainer Name="LegoImpacts" ID="{B7089040-AEA4-45A7-AEA6-75C619EFF517}" ShortID="148844513">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B2A64A0D-45AF-4AE9-A894-014648CFEF3A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-177"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Aalborg Universitet - København 3N" ID="{068FA6DD-C253-406C-9399-D5CFA12B3C79}" ShortID="536822021">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9EB8774E-3E1D-42C0-BE9B-23DAC302B79F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 3N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="427190654"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 3N" ID="{307F5D20-FDA6-4DD4-80EE-1C9D50497376}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 3N 1" ID="{7E4642DB-2EAE-444C-A3D3-AD8665E4D5A8}" ShortID="155727903">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 3N 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="789351009"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 3N 1" ID="{9EE81201-AE20-49DA-BA07-68C1EF8BC3A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 3N 2" ID="{747964F2-4B45-438E-BF2F-E25CE6D0492C}" ShortID="95513420">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 3N 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="130566448"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 3N 2" ID="{5DF55E7E-BA35-494F-8A94-015025EB8E4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 3N 3" ID="{7D543654-2833-48DB-95D3-2EB990EA98AB}" ShortID="94848862">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 3N 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="898041392"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 3N 3" ID="{04193FE1-4E9B-4281-AFD5-1CB0C2D26901}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 4N" ID="{1525594C-8CB5-4314-AACB-8DC95C7ED043}" ShortID="893562555">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 4N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300677189"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 4N" ID="{012032CA-D40F-452D-A699-89BD6AE57BE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 4N 1" ID="{B6F5A6B5-0C61-4896-90F0-B598D425FA88}" ShortID="296847763">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 4N 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="236429987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 4N 1" ID="{1BA88791-FA02-4966-ADB7-1A2F91809979}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 4N 2" ID="{4CAE372D-99AE-406D-960C-7A86DA762358}" ShortID="1035152441">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 4N 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983943605"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 4N 2" ID="{D98DB278-C41C-4A08-AB3A-EAE2903741F3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 4N 3" ID="{21C46F94-0E18-48A7-A181-1AC11BA8208A}" ShortID="293225950">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 4N 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="197387765"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 4N 3" ID="{0622705E-3B10-43AD-877B-12CA40E1E0AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - København 4N 4" ID="{65643972-7D4F-42C9-9422-6CE393A3F6FB}" ShortID="198150032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - København 4N 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="671455629"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - København 4N 4" ID="{48A5BD52-BC36-481B-AEBB-7B57F0414EC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Aalborg Universitet - KøbenhavnN" ID="{3EE32E89-7E61-462D-9EC7-CD19EC060839}" ShortID="845342488">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}">
+											<Language>SFX</Language>
+											<AudioFile>LegoTable\Aalborg Universitet - KøbenhavnN.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="657882075"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Aalborg Universitet - KøbenhavnN" ID="{6B90FF56-3170-4ECC-A8EE-8DDE548BA4E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{AEAD68FD-93D8-444E-AD27-C14F600BF07E}" ShortID="539577566">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{A700628E-0DDB-459E-9968-28C3B9012DF1}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="359358972"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{A700628E-0DDB-459E-9968-28C3B9012DF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{0026E9B3-2D2C-44B3-AD6C-EF731A8B99F1}" ShortID="279597553">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{6B0D8A9A-EF80-4AA9-BB16-28A6BA1E6790}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="148390160"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{6B0D8A9A-EF80-4AA9-BB16-28A6BA1E6790}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{6D3D33CE-B6C4-46C6-9EB5-D785D2089959}" ShortID="385730130">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{3B6A746C-93FA-469B-B4F7-46FE70F39CE0}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="658218352"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{3B6A746C-93FA-469B-B4F7-46FE70F39CE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{CBDF7302-7E66-4B6F-B093-F1C10C3B919C}" ShortID="976285330">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{3438D9E2-D57E-41C7-A320-2E58D750A318}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="660968054"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{3438D9E2-D57E-41C7-A320-2E58D750A318}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{B64AF97B-4F94-48CC-A197-6DBC1413E5A8}" ShortID="1004910325">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{F51FB20E-9E27-42C9-9806-982A59413AAF}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="123176262"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{F51FB20E-9E27-42C9-9806-982A59413AAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{4CE9DAA2-5BA0-4DDE-AE67-BD3A259E941D}" ShortID="911246081">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{044ACA8C-1F2F-4F40-8639-C79B69A45957}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="846769641"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{044ACA8C-1F2F-4F40-8639-C79B69A45957}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{27822175-0780-4640-B139-CBADF954A2D6}" ShortID="218367990">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{F961F4C3-8740-4932-B6B3-65334868680B}">
+											<Language>SFX</Language>
+											<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="464091641"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{F961F4C3-8740-4932-B6B3-65334868680B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="LegoImpacts" ID="{D0C9ED01-7947-46A0-8647-274A5AB1747F}" ShortID="61683253">
+					<ChildrenList>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 1N" ID="{DB69E4F8-A248-4418-A575-5E12BB7FC213}" ShortID="942730594">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 1N" ID="{2A583D67-1A21-4BC4-B51E-D371B71C12BB}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 1N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="749728677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 1N" ID="{2A583D67-1A21-4BC4-B51E-D371B71C12BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 2N" ID="{61E40878-9E2F-404B-B92E-809C93078C85}" ShortID="288723729">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EF85F022-5717-4E73-A33E-577F112EB4CA}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 2N" ID="{983A0FFB-C6EF-467A-AB10-860E0E4106C9}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 2N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="529313400"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 2N" ID="{983A0FFB-C6EF-467A-AB10-860E0E4106C9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 3N" ID="{9DC02A05-4633-4C4D-AA2F-0AA60B4080D4}" ShortID="42847377">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 3N" ID="{3EB22E1A-FBB7-4EBA-BEFA-7BC3225D3764}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 3N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="584692591"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 3N" ID="{3EB22E1A-FBB7-4EBA-BEFA-7BC3225D3764}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 4N" ID="{BC46EA0F-1E1F-41BE-B3EB-FAA5686A2D46}" ShortID="850892210">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 4N" ID="{FBED05AE-88CB-4A10-AC64-BE5F7B65ABA4}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 4N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="863258995"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 4N" ID="{FBED05AE-88CB-4A10-AC64-BE5F7B65ABA4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 5N" ID="{BFBB76F3-BBCD-4D26-881A-8A36B6739FA3}" ShortID="277395175">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 5N" ID="{9AE95CE7-AE22-4C49-B597-0AB6DA005F85}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 5N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="459129049"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 5N" ID="{9AE95CE7-AE22-4C49-B597-0AB6DA005F85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 6N" ID="{75D49AD1-B980-457E-8B86-F58393AE0F83}" ShortID="940383198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 6N" ID="{EFDA358A-482D-4C52-B1F3-A5CFCA6BDE25}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 6N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="215224746"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 6N" ID="{EFDA358A-482D-4C52-B1F3-A5CFCA6BDE25}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 7N" ID="{54907FE3-1B8C-4D74-90F4-A7F8C47EDB75}" ShortID="677686728">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 7N" ID="{2FF21870-FFB9-4EA7-939D-6C6764DA00EF}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 7N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="409857837"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049 7N" ID="{2FF21870-FFB9-4EA7-939D-6C6764DA00EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049N" ID="{8A3D19F1-EABD-46F3-A1A2-93EA7B0348E9}" ShortID="331464227">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049N" ID="{55E81B42-FDE4-431A-AE99-5F49F6A9AAB9}">
+									<Language>SFX</Language>
+									<AudioFile>LegoImpacts\Toys, Misc, Lego Blocks, Dropped In Full Box SND33049N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="34140690"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego Blocks, Dropped In Full Box SND33049N" ID="{55E81B42-FDE4-431A-AE99-5F49F6A9AAB9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="LegoTable" ID="{563BCA19-1EED-4F38-85BF-0F7B085E5C99}" ShortID="102333139"/>
+				<Folder Name="LegoWaterfall" ID="{1DA30DD5-2521-4D1C-8A67-28499B927DA6}" ShortID="229180830">
+					<ChildrenList>
+						<Sound Name="Toys, Misc, Lego, Pile, Movement SND29534 1N" ID="{9D0B2097-2A9C-4BBE-9662-7CAA2E840345}" ShortID="39132009">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Pile, Movement SND29534 1N" ID="{306B2960-5499-4B30-95FD-4D5612ADA8EE}">
+									<Language>SFX</Language>
+									<AudioFile>LegoWaterfall\Toys, Misc, Lego, Pile, Movement SND29534 1N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="941514653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Pile, Movement SND29534 1N" ID="{306B2960-5499-4B30-95FD-4D5612ADA8EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Pile, Movement SND29534 2N" ID="{43AB8804-6780-46AE-85FE-65A7BDE47155}" ShortID="11082922">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Pile, Movement SND29534 2N" ID="{FDB6BBDC-945A-4B00-BE60-C9A0EE9D1843}">
+									<Language>SFX</Language>
+									<AudioFile>LegoWaterfall\Toys, Misc, Lego, Pile, Movement SND29534 2N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="893355349"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Pile, Movement SND29534 2N" ID="{FDB6BBDC-945A-4B00-BE60-C9A0EE9D1843}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Lego, Pile, Movement SND29534N" ID="{3E4D9B3E-9A9D-433A-A669-218A18673B5A}" ShortID="395253307">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Lego, Pile, Movement SND29534N" ID="{40F26B17-FE0A-4B6D-9B0C-002077910B8B}">
+									<Language>SFX</Language>
+									<AudioFile>LegoWaterfall\Toys, Misc, Lego, Pile, Movement SND29534N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="924190341"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Lego, Pile, Movement SND29534N" ID="{40F26B17-FE0A-4B6D-9B0C-002077910B8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Toys, Misc, Toy Box, Cardboard, Impact, Containing Lego Pieces 04 SND16319N" ID="{6491C9FB-8D59-47E9-A827-84CF35022A7C}" ShortID="1039163158">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Toys, Misc, Toy Box, Cardboard, Impact, Containing Lego Pieces 04 SND16319N" ID="{F5CBB075-BDD8-46A7-A9AB-28AC0ACE97EA}">
+									<Language>SFX</Language>
+									<AudioFile>LegoWaterfall\Toys, Misc, Toy Box, Cardboard, Impact, Containing Lego Pieces 04 SND16319N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1030545349"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Toys, Misc, Toy Box, Cardboard, Impact, Containing Lego Pieces 04 SND16319N" ID="{F5CBB075-BDD8-46A7-A9AB-28AC0ACE97EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Shooting" ID="{ED0073BA-6F13-44F3-8C89-E8C03815B80B}" ShortID="753884364">
+					<ChildrenList>
+						<Sound Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 300m 01 SND55784N" ID="{CFEACB06-12F6-46F7-A2D6-8D2427077A27}" ShortID="792178783">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 300m 01 SND55784N" ID="{D4A42096-143E-47B0-A8B2-CD176D990422}">
+									<Language>SFX</Language>
+									<AudioFile>Shooting\Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 300m 01 SND55784N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="719800998"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 300m 01 SND55784N" ID="{D4A42096-143E-47B0-A8B2-CD176D990422}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 400m 03 SND55913N" ID="{FD6D4DBC-91B3-4BB9-BEC5-D86D875E466E}" ShortID="436837423">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 400m 03 SND55913N" ID="{8584EE65-39D3-4786-9F3B-E620553248DC}">
+									<Language>SFX</Language>
+									<AudioFile>Shooting\Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 400m 03 SND55913N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="866218084"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Front, 400m 03 SND55913N" ID="{8584EE65-39D3-4786-9F3B-E620553248DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 30m SND55912N" ID="{4E6AF534-C48C-46BE-B2F4-EA3227C70EE8}" ShortID="1002286832">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 30m SND55912N" ID="{AC2297F2-D1FF-4A2F-9B53-4ADE38706A21}">
+									<Language>SFX</Language>
+									<AudioFile>Shooting\Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 30m SND55912N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="657821188"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 30m SND55912N" ID="{AC2297F2-D1FF-4A2F-9B53-4ADE38706A21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 50m 01 SND55911N" ID="{79D84FCC-749C-425E-802A-3984275C34C9}" ShortID="643133024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 50m 01 SND55911N" ID="{42828951-AEF1-4F2B-B2BE-A2983B7B8DB1}">
+									<Language>SFX</Language>
+									<AudioFile>Shooting\Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 50m 01 SND55911N.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="449205370"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Guns, Artillery, D20 152mm Howitzer, 2S3 Akatsiya, Rear, 50m 01 SND55911N" ID="{42828951-AEF1-4F2B-B2BE-A2983B7B8DB1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="Music - Fluffys Carrot Farm" ID="{E5690B61-22B8-4C4A-8690-246F0978EFD4}" ShortID="379283742">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{44B17E97-BBFE-4756-A347-B209BE2E795F}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music - Fluffys Carrot Farm" ID="{1292D5C0-4F52-4AF8-B364-A301C08A1864}">
+							<Language>SFX</Language>
+							<AudioFile>Music - Fluffys Carrot Farm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1012451703"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music - Fluffys Carrot Farm" ID="{1292D5C0-4F52-4AF8-B364-A301C08A1864}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

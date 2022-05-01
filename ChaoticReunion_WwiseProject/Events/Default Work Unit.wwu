@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_LegoImpacts" ID="{3A2559EA-7FB0-4E72-BA8D-CDE66003E95D}">
+					<ChildrenList>
+						<Action Name="" ID="{4DAD8371-A3DF-420D-90DC-E1A14A1A213C}" ShortID="441080229">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LegoImpacts" ID="{B7089040-AEA4-45A7-AEA6-75C619EFF517}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music___Fluffys_Carrot_Farm" ID="{136A3B8F-A325-4848-9674-9FF24073D6A8}">
+					<ChildrenList>
+						<Action Name="" ID="{65E71EF1-E0B2-4A29-82E5-E1411DFD52A9}" ShortID="1006534466">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music - Fluffys Carrot Farm" ID="{E5690B61-22B8-4C4A-8690-246F0978EFD4}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
