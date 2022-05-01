@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float spawnAmount;
 
     private float _frequencyTimer;
+
+    public Coroutine spawning;
     
     public void Spawn()
     {
@@ -31,7 +33,7 @@ public class Spawner : MonoBehaviour
             }
         }
         
-        StartCoroutine(KeepSpawning());
+        spawning = StartCoroutine(KeepSpawning());
     }
 
     private IEnumerator KeepSpawning()
@@ -42,10 +44,10 @@ public class Spawner : MonoBehaviour
         
         _frequencyTimer = spawnFrequency;
         
-        while (GameManager.Instance.GameState.Equals(GameStates.Running))
+        while (true)
         {
             _frequencyTimer -= Time.deltaTime;
-
+            
             if (_frequencyTimer <= 0)
             {
                 if (gameObjects.Count > 0)

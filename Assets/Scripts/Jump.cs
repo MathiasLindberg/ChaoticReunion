@@ -27,6 +27,8 @@ public class Jump : MonoBehaviour
                 shotBrick.GetComponent<Rigidbody>().AddForce((player.MovementDirection + Vector3.up * 0.1f) * shootingForce, ForceMode.Impulse);
                 particleSystem.GetComponent<Aligner>().Direction = player.MovementDirection;
                 particleSystem.Play();
+                
+                AkSoundEngine.PostEvent("Play_LegoShot", this.gameObject);
             }
         }
     }
