@@ -30,6 +30,7 @@ public class Brick : MonoBehaviour
     private float emitForce;
     private float emitLastPulseTime;
     private float jointAttachmentTime;
+    private bool ignoreShake;
 
     void Start()
     {
@@ -38,7 +39,6 @@ public class Brick : MonoBehaviour
         ChildBricks = new List<Brick>();
 
         Material mat = GetComponent<MeshRenderer>().material;
-      //  mat.color = new Color(Random.value, Random.value, Random.value);
         
           if (RandomColour == 1) { mat.color = new Color(217f / 255f, 217f / 255f, 214f / 255f); } //white
           if (RandomColour == 2) { mat.color = new Color(225f / 255f, 205f / 255f, 000f / 255f); } //yellow 
@@ -101,8 +101,8 @@ public class Brick : MonoBehaviour
         {
             joint.breakForce = breakForce;
             joint.breakTorque = breakTorque;
+            ignoreShake = false;
         }
-        if (Input.GetKeyDown(KeyCode.I)) Time.timeScale = 1;
     }
 
     public bool TryGetPlayerFromChain(out Player player)
@@ -140,13 +140,6 @@ public class Brick : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (!setup || IsPlayer) return;
-
-        var brickComponent = collision.gameObject.GetComponent<Brick>();
-        if (collision.gameObject.CompareTag("Brick") && brickComponent.IsChainedToPlayer && GameManager.Instance.GameState.Equals(GameStates.Running))
-        {
-            CameraShaker.Instance.ShakeOnce(5, 4, 1, 1);
-            AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
-        }
 
         if (attached && !IsChainedToPlayer && collision.collider.TryGetComponent(out Brick brick) && brick.IsChainedToPlayer)
         {
@@ -219,6 +212,11 @@ public class Brick : MonoBehaviour
             foreach (Collider collider in Physics.OverlapSphere(transform.position, radius, shootableLayer.value))
             {
                 if (collider == this.collider) continue;
+                if (TryGetComponent(out Brick brick) && GameManager.Instance.GameState.Equals(GameStates.Running))
+                {
+                    CameraShaker.Instance.ShakeOnce(1, 1, 0.5f, 0.5f);
+                    AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
+                }
                 collider.GetComponent<Rigidbody>().AddForce((collider.transform.position - transform.position).normalized * emitForce, ForceMode.Impulse);
             }
             emitLastPulseTime = t;
@@ -269,7 +267,6 @@ public class Brick : MonoBehaviour
             diff.y = (Mathf.Abs(ownOffset.y) + Mathf.Abs(otherOffset.y)) * (ownAttachment.IsSocket ? 1 : -1);
 
             transform.Translate(diff);
-            Time.timeScale = 0.05f;
 
             if (!aligned)
             {
@@ -285,6 +282,7 @@ public class Brick : MonoBehaviour
             joint.connectedAnchor = otherAttachment.Position;
             joint.connectedBody = to.GetComponent<Rigidbody>();
             jointAttachmentTime = Time.time;
+            ignoreShake = true;
 
             to.ChildBricks.Add(this);
             if (to.IsChainedToPlayer)
