@@ -42,10 +42,10 @@ public class Spawner : MonoBehaviour
         
         _frequencyTimer = spawnFrequency;
         
-        while (GameManager.Instance.GameState.Equals(GameStates.Running))
+        while (true)
         {
             _frequencyTimer -= Time.deltaTime;
-
+            
             if (_frequencyTimer <= 0)
             {
                 if (gameObjects.Count > 0)
