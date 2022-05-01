@@ -12,7 +12,7 @@ public class Jump : MonoBehaviour
 
     public void AddJumpingForce(bool ignoreForceSensor = false)
     {
-        if (!forceSensor.Touch) return;
+        if (!forceSensor.Touch && !ignoreForceSensor) return;
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.AddForce(new Vector3(0, jumpForce, 0));
 
