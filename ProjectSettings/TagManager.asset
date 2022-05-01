@@ -19,9 +19,9 @@ TagManager:
   - ConnectivityReceptor
   - ConnectivityConnector
   - Ground
-  - 
-  - 
-  - 
+  - Playfield
+  - Player
+  - Shootable
   - 
   - 
   - 

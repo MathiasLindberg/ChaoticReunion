@@ -11,6 +11,7 @@ public class Brick : MonoBehaviour
     [SerializeField] float breakTorque = 10f;
     [SerializeField] int width = 2;
     [SerializeField] int height = 2;
+    [SerializeField] LayerMask shootableLayer;
     private bool attached;
     private Brick parentBrick;
     public List<Brick> ChildBricks { get; private set; }
@@ -21,6 +22,12 @@ public class Brick : MonoBehaviour
     private bool setup;
     private float epsilon = 0f;
     private bool aligned = false;
+    private bool emittingForce = false;
+    private float emitStart;
+    private float emitTime;
+    private float emitDelay;
+    private float emitForce;
+    private float emitLastPulseTime;
 
     void Start()
     {
@@ -73,10 +80,10 @@ public class Brick : MonoBehaviour
             {
                 int index = i * width + j;
                 AttachmentPoint up = upperAttachments[index];
-                Gizmos.color = up.IsOccupied ? Color.red : Color.green;
+                Gizmos.color = up.Connection == null ? Color.red : Color.green;
                 Gizmos.DrawCube(transform.TransformPoint(up.Position), new Vector3(w, size.y, h) * 0.5f);
                 AttachmentPoint down = lowerAttachments[index];
-                Gizmos.color = down.IsOccupied ? Color.red : Color.green;
+                Gizmos.color = down.Connection == null ? Color.red : Color.green;
                 Gizmos.DrawCube(transform.TransformPoint(down.Position), new Vector3(w, size.y, h) * 0.5f);
                 
             }
@@ -85,7 +92,7 @@ public class Brick : MonoBehaviour
 
     void Update()
     {
-
+        if (emittingForce) Emit();
     }
 
     public bool TryGetPlayerFromChain(out Player player)
@@ -161,16 +168,14 @@ public class Brick : MonoBehaviour
         }
     }
 
-    private void Detach()
+    public void Detach()
     {
         attached = false;
         parentBrick.ChildBricks.Remove(this);
         foreach (AttachmentPoint attachment in parentAttachments)
         {
-            attachment.IsOccupied = false;
             if (attachment.Connection != null)
             {
-                attachment.Connection.IsOccupied = false;
                 attachment.Connection.Connection = null;
             }
             attachment.Connection = null;
@@ -180,6 +185,55 @@ public class Brick : MonoBehaviour
         parentBrick = null;
         transform.parent = null;
         aligned = false;
+
+        if (TryGetComponent(out FixedJoint joint)) Destroy(joint);
+    }
+
+    public void EmitForce(float time, float force, float delay)
+    {
+        emitTime = time;
+        emitForce = force;
+        emitDelay = delay;
+        emittingForce = true;
+    }
+
+    private void Emit()
+    {
+        float t = Time.time - emitTime;
+        if (t > emitTime) emittingForce = false;
+        else if (t > emitDelay && t - emitLastPulseTime > 0.01f)
+        {
+            float radius = this.collider.bounds.size.magnitude;
+            foreach (Collider collider in Physics.OverlapSphere(transform.position, radius, shootableLayer.value))
+            {
+                if (collider == this.collider) continue;
+                collider.GetComponent<Rigidbody>().AddForce((collider.transform.position - transform.position).normalized * emitForce, ForceMode.Impulse);
+            }
+            emitLastPulseTime = t;
+        }
+    }
+
+    private void ForceUpdateAttachment()
+    {
+        if (!TryGetComponent(out FixedJoint joint))
+        {
+            foreach (AttachmentPoint attachment in upperAttachments)
+            {
+                if (attachment.Connection != null)
+                {
+                    attachment.Connection.Connection = null;
+                }
+                attachment.Connection = null;
+            }
+            foreach (AttachmentPoint attachment in lowerAttachments)
+            {
+                if (attachment.Connection != null)
+                {
+                    attachment.Connection.Connection = null;
+                }
+                attachment.Connection = null;
+            }
+        }
     }
 
     private void Attach(Brick to, Vector3 at)
@@ -229,10 +283,10 @@ public class Brick : MonoBehaviour
             parentBrick = to;
             if (ownAttachment.IsSocket)
             {
-                float threshold = new Vector3(collider.bounds.size.x / width, collider.bounds.size.y / 4, collider.bounds.size.z / height).magnitude;
+                float threshold = new Vector3(collider.bounds.size.x / width, collider.bounds.size.y / 4, collider.bounds.size.z / height).magnitude * 0.1f;
                 foreach (AttachmentPoint thisAttachment in lowerAttachments)
                 {
-                    if (!thisAttachment.IsOccupied)
+                    if (thisAttachment.Connection == null)
                     {
                         Vector3 pos = to.transform.TransformPoint(thisAttachment.Position);
                         AttachmentPoint other = to.FindClosestAttachmentPoint(pos, !thisAttachment.IsSocket);
@@ -241,8 +295,6 @@ public class Brick : MonoBehaviour
                         {
                             thisAttachment.Connection = other;
                             other.Connection = thisAttachment;
-                            thisAttachment.IsOccupied = true;
-                            other.IsOccupied = true;
                             parentAttachments.Add(other);
                         }
                     }
@@ -251,7 +303,23 @@ public class Brick : MonoBehaviour
             }
             else
             {
+                float threshold = new Vector3(collider.bounds.size.x / width, collider.bounds.size.y / 4, collider.bounds.size.z / height).magnitude * 0.1f;
+                foreach (AttachmentPoint thisAttachment in upperAttachments)
+                {
+                    if (thisAttachment.Connection == null)
+                    {
+                        Vector3 pos = to.transform.TransformPoint(thisAttachment.Position);
+                        AttachmentPoint other = to.FindClosestAttachmentPoint(pos, !thisAttachment.IsSocket);
 
+                        if (other != null && (to.transform.TransformPoint(other.Position) - transform.TransformPoint(thisAttachment.Position)).magnitude < threshold)
+                        {
+                            thisAttachment.Connection = other;
+                            other.Connection = thisAttachment;
+                            parentAttachments.Add(other);
+                        }
+                    }
+
+                }
             }
         }
 
@@ -268,7 +336,7 @@ public class Brick : MonoBehaviour
                 int index = i * width + j;
                 AttachmentPoint point = socket ? lowerAttachments[index] : upperAttachments[index];
                 float dist = (point.Position - localPosition).magnitude;
-                if (!point.IsOccupied && dist < closestDist)
+                if (point.Connection == null && dist < closestDist)
                 {
                     closest = point;
                     closestDist = dist;
@@ -290,7 +358,7 @@ public class Brick : MonoBehaviour
                 int index = i * width + j;
                 AttachmentPoint point = lowerAttachments[index];
                 float dist = (point.Position - localPosition).magnitude;
-                if (!point.IsOccupied && dist < closestDist)
+                if (point.Connection == null && dist < closestDist)
                 {
                     closest = point;
                     closestDist = dist;
@@ -313,7 +381,6 @@ public class Brick : MonoBehaviour
         public int X { get; private set; }
         public int Y { get; private set; }
         public Vector3 Position { get; private set; }
-        public bool IsOccupied { get; set; }
         public bool IsSocket { get; private set; }
         public AttachmentPoint Connection { get; set; }
 

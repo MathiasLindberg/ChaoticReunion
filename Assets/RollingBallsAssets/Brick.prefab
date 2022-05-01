@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5272235195270664277}
   - component: {fileID: 5272235195270664278}
   - component: {fileID: 5272235195270664279}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Brick
   m_TagString: Brick
   m_Icon: {fileID: 0}
@@ -115,6 +115,10 @@ MonoBehaviour:
   breakTorque: 200
   width: 2
   height: 2
+  shootableLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  childCount: 0
 --- !u!54 &5272235195270664279
 Rigidbody:
   m_ObjectHideFlags: 0

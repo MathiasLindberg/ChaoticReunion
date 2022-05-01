@@ -9,21 +9,27 @@ public class Player : MonoBehaviour
     [SerializeField] private KeyCode backKey = KeyCode.S;
     [SerializeField] private KeyCode leftKey = KeyCode.A;
     [SerializeField] private KeyCode rightKey = KeyCode.D;
+    [SerializeField] private KeyCode shootKey = KeyCode.LeftControl;
     [SerializeField] private float rollForce = 10.0f;
     [SerializeField] private float movementForce = 10.0f;
     [SerializeField] private float sensorRollForce = 2.0f;
     [SerializeField] private float sensorMovementForce = 2.0f;
     [SerializeField] private AccelerationSensor accelerationSensor;
+    [SerializeField] GameObject arrow;
+    [SerializeField] private LayerMask playfieldLayerMask;
+    GameObject arrowInstance;
     private Rigidbody rb;
     private bool forwardKeyDown;
     private bool backKeyDown;
     private bool leftKeyDown;
     private bool rightKeyDown;
     private Camera mainCam;
+    private float movingAvgRatio = 0.85f;
     
     // Acceleration Sensor variables
     private Vector3 previousAcceleration;
     public bool isSensorConnected { get; set; }
+    public Vector3 MovementDirection { get; private set; }
     
     public bool IsAlive { get; set; } = true;
     public bool CanMove { get; set; }
@@ -38,12 +44,14 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         mainCam = Camera.main;
         isSensorConnected = false;
+        arrowInstance = Instantiate(arrow);
     }
 
     // Update is called once per frame
     void Update()
     {        
         if (!CanMove) return;
+        
         
         if (Input.GetKeyDown(forwardKey)) forwardKeyDown = true;
         else if (Input.GetKeyUp(forwardKey)) forwardKeyDown = false;
@@ -57,6 +65,12 @@ public class Player : MonoBehaviour
         if (forwardKeyDown || backKeyDown || leftKeyDown || rightKeyDown)
         {
             ApplyMotion();
+            UpdateArrow();
+            if (Input.GetKeyDown(shootKey)) GetComponent<Jump>().AddJumpingForce(true);
+        }
+        else
+        {
+            arrowInstance.transform.position = Vector3.zero;
         }
     }
 
@@ -72,9 +86,28 @@ public class Player : MonoBehaviour
         else if (rightKeyDown) force += right;
 
         force *= Time.fixedDeltaTime * 1000.0f;
+        MovementDirection = force.normalized * movingAvgRatio + MovementDirection * (1.0f - movingAvgRatio);
+
 
         rb.AddForce(force * movementForce);
         rb.AddTorque(Vector3.Cross(force * rollForce, Vector3.down));
+    }
+
+    private void UpdateArrow()
+    {
+        if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out RaycastHit hit, 100, playfieldLayerMask.value, QueryTriggerInteraction.Collide))
+        {
+            Vector3 fwd = new Vector3(MovementDirection.x, 0, MovementDirection.z);
+            if (fwd.magnitude == 0)
+            {
+                arrowInstance.transform.position = Vector3.zero;
+            }
+            else
+            {
+                arrowInstance.transform.position = hit.point + fwd * 2.0f;
+                arrowInstance.transform.forward = fwd;
+            }
+        }
     }
     
     public void InitializeSensor()
