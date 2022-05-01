@@ -133,6 +133,8 @@ public class GameManager : MonoBehaviour
     {
         GameState = GameStates.Finishing;
         
+        StopCoroutine(spawner.spawning);
+        
         UIViewManager.Instance.EnableUIViewExclusive(GameState);
 
         foreach (var player in players)
