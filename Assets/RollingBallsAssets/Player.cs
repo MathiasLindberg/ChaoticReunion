@@ -119,6 +119,7 @@ public class Player : MonoBehaviour
 
     public void ApplyAccelerationFromSensor()
     {
+        UpdateArrow();
         Vector3 currentAcceleration = accelerationSensor.Acceleration;
         
         if ((oldAcceleration - currentAcceleration).magnitude > shakeThreshold)

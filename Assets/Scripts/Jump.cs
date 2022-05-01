@@ -12,7 +12,7 @@ public class Jump : MonoBehaviour
 
     public void AddJumpingForce(bool ignoreForceSensor = false)
     {
-        if (!forceSensor.Touch) return;
+        if (!forceSensor.Touch && !ignoreForceSensor) return;
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.AddForce(new Vector3(0, jumpForce, 0));
 
@@ -27,6 +27,8 @@ public class Jump : MonoBehaviour
                 shotBrick.GetComponent<Rigidbody>().AddForce((player.MovementDirection + Vector3.up * 0.1f) * shootingForce, ForceMode.Impulse);
                 particleSystem.GetComponent<Aligner>().Direction = player.MovementDirection;
                 particleSystem.Play();
+                
+                AkSoundEngine.PostEvent("Play_LegoShot", this.gameObject);
             }
         }
     }

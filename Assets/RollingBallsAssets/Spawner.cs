@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float spawnAmount;
 
     private float _frequencyTimer;
+
+    public Coroutine spawning;
     
     public void Spawn()
     {
@@ -31,7 +33,7 @@ public class Spawner : MonoBehaviour
             }
         }
         
-        StartCoroutine(KeepSpawning());
+        spawning = StartCoroutine(KeepSpawning());
     }
 
     private IEnumerator KeepSpawning()

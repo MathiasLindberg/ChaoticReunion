@@ -115,7 +115,7 @@ MonoBehaviour:
   breakForce: 1200
   breakTorque: 320
   width: 2
-  height: 2
+  height: 1
   shootableLayer:
     serializedVersion: 2
     m_Bits: 16384
