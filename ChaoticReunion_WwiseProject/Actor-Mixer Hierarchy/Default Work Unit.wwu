@@ -1403,6 +1403,7 @@
 				</Folder>
 				<Sound Name="Music - Fluffys Carrot Farm" ID="{E5690B61-22B8-4C4A-8690-246F0978EFD4}" ShortID="379283742">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -2640,6 +2641,462 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="Guns, Cannon, Multiple Shots, Dull SND6327 2" ID="{8F56B176-D1D9-4061-B2F3-7D3C62F111F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="BrickWall" ID="{919F4892-555B-49FA-8FB9-E1BF97A027EC}" ShortID="829100721">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4514BAF0-2725-4612-BEE6-4A7A3C0EC47E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="202"/>
+											<Property Name="Min" Type="Real64" Value="-101"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Brickwall" ID="{48EEAEC0-BAAC-4861-A0EE-E2D38724C1B2}" ShortID="371531010">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Bricks" ID="{A9FCC2F8-AF54-4682-B3DF-D912BBDC1392}" ShortID="48701702">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542" ID="{CBC47753-2CA4-47D9-A8C2-BAB83A3B5A85}" ShortID="440987142">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542" ID="{BBC0A5B9-D2BC-4301-99C2-DEED55BE7E94}">
+													<Language>SFX</Language>
+													<AudioFile>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="735835899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542" ID="{BBC0A5B9-D2BC-4301-99C2-DEED55BE7E94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1" ID="{DD3273E1-001A-485F-834D-339D0924B327}" ShortID="408505789">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1" ID="{CC745C74-72A3-49C9-A6A0-AA85AE3AB4A1}">
+													<Language>SFX</Language>
+													<AudioFile>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032032931"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 1" ID="{CC745C74-72A3-49C9-A6A0-AA85AE3AB4A1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2" ID="{EFEAA933-06BE-405F-80F1-1960C5F66513}" ShortID="687090">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2" ID="{7FBDEF5B-03C4-4C75-8E26-EE1073E07CEB}">
+													<Language>SFX</Language>
+													<AudioFile>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="722944686"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 2" ID="{7FBDEF5B-03C4-4C75-8E26-EE1073E07CEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3" ID="{5729D855-E2A6-44B3-9C44-56ED77959AB9}" ShortID="758862312">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3" ID="{40BA6DCD-F241-4207-8626-A8A04D256C81}">
+													<Language>SFX</Language>
+													<AudioFile>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="667574172"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 3" ID="{40BA6DCD-F241-4207-8626-A8A04D256C81}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4" ID="{8A433290-E880-43AE-BD8C-9074164F691F}" ShortID="494327441">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4" ID="{D28B4D31-B2DA-42C4-802F-8546F4C3674B}">
+													<Language>SFX</Language>
+													<AudioFile>Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76456941"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Bricks Wall, Small, Fall On Stone Wall, Impact, Paving Bricks SND69542 4" ID="{D28B4D31-B2DA-42C4-802F-8546F4C3674B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="LegoImpacts" ID="{75EA949A-C1EA-4F7B-B3C4-A52F6B54BD1B}" ShortID="374343112">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{630D16A0-DB8B-4207-B779-D9489F6C8470}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="303"/>
+															<Property Name="Min" Type="Real64" Value="-177"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{4D0F0DC7-2DD5-4B31-84F5-583B032947AE}" ShortID="330952514">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Brickspeed" ID="{8A855385-4E1E-4CD8-9F45-1840F5A71D8B}" WorkUnitID="{21D31D2B-C713-43BB-8CEA-AC97340F9A4B}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7292892B-08FA-43AD-A48F-1AF21069A7F6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-278</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>554</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{5B4F230B-B909-4B5D-8731-4498B5CA306C}" ShortID="616155018">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{96F19828-1586-49CF-88CA-5CFA258049D1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00797104322139303"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0378624553016169"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0387164956467662"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.184472714552239"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359358972"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 1N" ID="{96F19828-1586-49CF-88CA-5CFA258049D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{ADDFAAC5-57CE-4DBC-9A5F-9E08964947A2}" ShortID="681694783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{BBC85C48-3BBC-44A3-8E50-ECB892CA5B8F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0174498017723881"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0535958197294776"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0282520600124378"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.269225513059702"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="148390160"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 2N" ID="{BBC85C48-3BBC-44A3-8E50-ECB892CA5B8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{7FB4D8EA-3729-4174-A3DD-7D23DC47FA68}" ShortID="457645983">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{AAC7AAFF-A6ED-4F8F-A954-B514620B3E66}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00473938899253731"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0230506646455224"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0743222364738806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.167386602145522"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658218352"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 3N" ID="{AAC7AAFF-A6ED-4F8F-A954-B514620B3E66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{CEE26A49-8C9E-4DA3-9F7A-CAFF2DD72CDB}" ShortID="675032431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{E8C95A3E-B5DA-443A-9528-654DD8F8EB9C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.015233937733209"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0561963036380597"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0267440240205224"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.19871825443097"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="660968054"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 4N" ID="{E8C95A3E-B5DA-443A-9528-654DD8F8EB9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{C308B37C-56AC-4F6D-8CF5-DE87FA885844}" ShortID="149688617">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{5D89D8D3-B3E9-4285-B354-C2C6EFBB14D9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0135027985074627"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0513106343283582"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0342070895522388"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.184838308457711"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123176262"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 5N" ID="{5D89D8D3-B3E9-4285-B354-C2C6EFBB14D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{11593397-136E-413C-B43D-2865B7DA9E38}" ShortID="183531723">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{E2CB262F-5640-4842-8E5B-85AE516AA5E9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0162879547574627"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0417239388992537"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0118255013992537"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.225800139925373"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846769641"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 7N" ID="{E2CB262F-5640-4842-8E5B-85AE516AA5E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{D1F519E3-671E-4115-B2E5-21FDF8AB8495}" ShortID="694102003">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{56A9A0FC-D00E-4B58-A678-AEBF321CC988}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CC80C96E-1AC5-4026-93F3-D920E0EA5380}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{0D068B95-993E-4349-A17A-A7C3206BA30E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0502870024875622"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0602274564676617"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0122793843283582"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.288565531716418"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lego Noises\Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="464091641"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Toys, Misc, Lego Blocks, Movement In Hand SND33047 8N" ID="{0D068B95-993E-4349-A17A-A7C3206BA30E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

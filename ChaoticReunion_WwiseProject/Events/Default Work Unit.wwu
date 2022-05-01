@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BrickWall" ID="{5A188EF7-0E3C-43E2-A10C-63ACC44CFD4E}">
+					<ChildrenList>
+						<Action Name="" ID="{8621ED00-6044-4AF8-8C3B-008513F56C62}" ShortID="152906594">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BrickWall" ID="{919F4892-555B-49FA-8FB9-E1BF97A027EC}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
