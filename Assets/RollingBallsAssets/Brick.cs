@@ -28,6 +28,7 @@ public class Brick : MonoBehaviour
     private float emitDelay;
     private float emitForce;
     private float emitLastPulseTime;
+    private float jointAttachmentTime;
 
     void Start()
     {
@@ -56,6 +57,7 @@ public class Brick : MonoBehaviour
         lowerAttachments = new List<AttachmentPoint>(width * height);
         parentAttachments = new List<AttachmentPoint>((width * height) / 2);
         Vector3 size = collider.bounds.size;
+        size.y *= 0.5f;
         for (int i = 0; i < 3; i++) size[i] /= transform.localScale[i];
         for (int i = 0; i < height; i++)
         {
@@ -93,6 +95,12 @@ public class Brick : MonoBehaviour
     void Update()
     {
         if (emittingForce) Emit();
+
+        if (TryGetComponent(out Joint joint) && Time.time - jointAttachmentTime > 3.0f)
+        {
+            joint.breakForce = breakForce;
+            joint.breakTorque = breakTorque;
+        }
     }
 
     public bool TryGetPlayerFromChain(out Player player)
@@ -271,10 +279,9 @@ public class Brick : MonoBehaviour
             {
                 joint = gameObject.AddComponent<FixedJoint>();
             }
-            joint.breakForce = breakForce;
-            joint.breakTorque = breakTorque;
             joint.connectedAnchor = otherAttachment.Position;
             joint.connectedBody = to.GetComponent<Rigidbody>();
+            jointAttachmentTime = Time.time;
 
             to.ChildBricks.Add(this);
             if (to.IsChainedToPlayer)
