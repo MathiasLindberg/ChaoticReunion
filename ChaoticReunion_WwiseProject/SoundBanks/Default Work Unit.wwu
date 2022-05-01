@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{79C5AB04-5227-4F05-BF77-9617E3C172E1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Music___Fluffys_Carrot_Farm" ID="{136A3B8F-A325-4848-9674-9FF24073D6A8}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Camerashake" ID="{7263567C-C0E9-48A6-9933-F57E2754A9CC}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_LegoImpacts" ID="{3A2559EA-7FB0-4E72-BA8D-CDE66003E95D}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
