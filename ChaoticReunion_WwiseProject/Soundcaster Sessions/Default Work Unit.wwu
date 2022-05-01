@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5D7C2EB3-F9B1-4999-8FCF-F73FF747CEE3}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{5D7C2EB3-F9B1-4999-8FCF-F73FF747CEE3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5D7C2EB3-F9B1-4999-8FCF-F73FF747CEE3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{99BDA012-1B65-4EB3-85AD-14236D8B12E0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{090B38B9-4618-47B6-BCE8-942FA92A217B}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music___Fluffys_Carrot_Farm" ID="{136A3B8F-A325-4848-9674-9FF24073D6A8}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_BrickWall" ID="{5A188EF7-0E3C-43E2-A10C-63ACC44CFD4E}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Playermovement" ID="{8F380C38-085D-4D77-8DA7-614A56A31C6C}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Camerashake" ID="{7263567C-C0E9-48A6-9933-F57E2754A9CC}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LegoImpacts" ID="{3A2559EA-7FB0-4E72-BA8D-CDE66003E95D}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LegoShot" ID="{92572515-CE5E-41E5-A513-0C6AC383B80A}" WorkUnitID="{A7CDECA0-26C9-4730-90F8-D25E75C3549A}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Rollspeed" ID="{CF0B3E74-82B8-4AB6-89E1-5ABEE1A02416}"/>
+							<Value>89.873417721519</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Brickspeed" ID="{8A855385-4E1E-4CD8-9F45-1840F5A71D8B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
