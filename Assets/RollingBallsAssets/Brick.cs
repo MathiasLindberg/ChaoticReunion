@@ -141,11 +141,13 @@ public class Brick : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        /*
         if (collision.gameObject.CompareTag("Walls") && (IsChainedToPlayer || IsPlayer) && GameManager.Instance.GameState.Equals(GameStates.Running))
         {
             CameraShaker.Instance.ShakeOnce(1, 1, 0.5f, 0.5f);
             AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
         }
+        */
         
         if (!setup || IsPlayer) return;
 
@@ -220,6 +222,11 @@ public class Brick : MonoBehaviour
             foreach (Collider collider in Physics.OverlapSphere(transform.position, radius, shootableLayer.value))
             {
                 if (collider == this.collider) continue;
+                if (TryGetComponent(out Brick brick) && GameManager.Instance.GameState.Equals(GameStates.Running))
+                {
+                    CameraShaker.Instance.ShakeOnce(1, 1, 0.5f, 0.5f);
+                    AkSoundEngine.PostEvent("Play_Camerashake", this.gameObject);
+                }
                 collider.GetComponent<Rigidbody>().AddForce((collider.transform.position - transform.position).normalized * emitForce, ForceMode.Impulse);
             }
             emitLastPulseTime = t;
