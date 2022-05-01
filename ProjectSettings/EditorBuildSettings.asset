@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Basic Connection Sample/Scenes/Sample Scene.unity
-    guid: 5c57f8106731e4b1388afea2d7c969c0
+    path: Assets/RollingBallsAssets/Scenes/Intro.unity
+    guid: 68b11b0308fc54644a333fbd38d593da
+  - enabled: 1
+    path: Assets/RollingBallsAssets/Scenes/Main3D.unity
+    guid: e3637e4e772ebb94aabf0daebe749fec
   m_configObjects: {}

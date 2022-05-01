@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Event Name="Play_LegoImpacts" ID="{3A2559EA-7FB0-4E72-BA8D-CDE66003E95D}">
 					<ChildrenList>
-						<Action Name="" ID="{4DAD8371-A3DF-420D-90DC-E1A14A1A213C}" ShortID="441080229">
+						<Action Name="" ID="{EC213260-E435-423C-A311-A31666CB43BA}" ShortID="803692853">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LegoImpacts" ID="{B7089040-AEA4-45A7-AEA6-75C619EFF517}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+									<ObjectRef Name="LegoImpacts" ID="{F37A3A74-8A35-44FE-84B6-B63EF789FC47}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -64,6 +64,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="BrickWall" ID="{919F4892-555B-49FA-8FB9-E1BF97A027EC}" WorkUnitID="{D04C5B8A-00FB-47FD-A234-16CCFDD6BD04}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience" ID="{090B38B9-4618-47B6-BCE8-942FA92A217B}">
+					<ChildrenList>
+						<Action Name="" ID="{EBAA211A-7D4E-4E89-8B26-9F6316A66AA9}" ShortID="738565915">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{A5420B53-71AD-49ED-834B-F2E22E922318}" WorkUnitID="{913262C4-8033-4FB0-B4CB-8E61AE3DD3EF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

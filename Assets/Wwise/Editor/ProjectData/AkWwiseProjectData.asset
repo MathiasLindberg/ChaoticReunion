@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6ec980ccc51a264093f3d920e0ea5380
     GuidInternal: 
-    m_lastTime: -8585502170723937965
+    m_lastTime: -8585502005420737425
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b888ea2c0e8b51488976c9892fd74cbf
     GuidInternal: 
-    m_lastTime: -8585502072109739114
+    m_lastTime: -8585502028949293314
     List:
     - name: Main
       guid: 04abc5792752054fbf779617e3c172e1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0eccda7c926304790f8d25e75c3549a
     GuidInternal: 
-    m_lastTime: -8585502072109559594
+    m_lastTime: -8585502025889646450
     List:
+    - name: Play_Ambience
+      guid: b9380b091846b647bce8942fa92a217b
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0eccda7c926304790f8d25e75c3549a
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: b9380b091846b647bce8942fa92a217b
+      Path: Events\Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_BrickWall
       guid: f78e185a3c0ee243a10c63acc44cfd4e
       id: 3952659097
@@ -283,7 +300,7 @@ MonoBehaviour:
     m_lastTime: -8585502170723670906
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000c0000000f000000100000006100000062000000c8000000c9000000
+  ExpandedWaapiItemIds: 010000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

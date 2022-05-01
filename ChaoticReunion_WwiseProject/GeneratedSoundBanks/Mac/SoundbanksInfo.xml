@@ -11,16 +11,40 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2270522815">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2393973379">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1255782891">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2635513256">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="200978758" Language="SFX">
+							<ShortName>Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668.wav</ShortName>
+							<Path>SFX\Ambience, Grassland, Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming SND40668_9EDFC787.wem</Path>
+						</File>
+						<File Id="503518443" Language="SFX">
+							<ShortName>Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672.wav</ShortName>
+							<Path>SFX\Ambience, Nautical, Pier, Boarding Barges, Wood Noise, Metal Creaks SND53672_9EDFC787.wem</Path>
+						</File>
+						<File Id="889441978" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory, High Ventilation, Birds SND49125.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory, High Ventilation, Birds SND49125_9EDFC787.wem</Path>
+						</File>
+						<File Id="1004075144" Language="SFX">
+							<ShortName>Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182.wav</ShortName>
+							<Path>SFX\Ambience, Industrial, Factory Hum, Heavy Machinery, Water Movement 01 SND13182_9EDFC787.wem</Path>
+						</File>
+						<File Id="1064288215" Language="SFX">
+							<ShortName>Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679.wav</ShortName>
+							<Path>SFX\Ambience, Nautical, Boat Pier, Movement, Metal, Wood Creak, City Hum SND53679_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3952659097" Name="Play_BrickWall" ObjectPath="\Events\Default Work Unit\Play_BrickWall" DurationType="OneShot" DurationMin="0.233591" DurationMax="0.699771">
 					<IncludedMemoryFiles>
 						<File Id="76456941" Language="SFX">
